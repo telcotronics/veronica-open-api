@@ -4,7 +4,7 @@
 [![Platforms](https://img.shields.io/badge/plaform-windows%20%7C%20linux%20%7C%20macOS-blue.svg?style=plastic&colorB=68B7EB)]()
 [![Release](https://img.shields.io/badge/version-1.0.0-green.svg?style=plastic&colorB=68B7EB)]()
 
-`Veronica` es una API Rest utilizada para la emisión y autorización de comprobantes electrónicos según la normativa vigente del [Sistema de Rentas Internas del Ecuador](http://www.sri.gob.ec/). El proyecto ha sido desarrollado a través de una aplicación [Spring-Boot 1.5.9.RELEASE](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot/1.5.9.RELEASE). Adicionalmente, `Veronica` almacena los comprobantes en una base de datos PostgreSQL lo cual le permite realizar posteriores consultas más allá de las comunes como por ejemplo, consultar detalles de facturas, consultar totales o listar comprobantes por emisor o receptor.
+`Veronica` es una API Rest de código abierto utilizada para la emisión y autorización de comprobantes electrónicos según la normativa vigente del [Sistema de Rentas Internas del Ecuador](http://www.sri.gob.ec/). El proyecto ha sido desarrollado a través de una aplicación [Spring-Boot 1.5.9.RELEASE](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot/1.5.9.RELEASE). Adicionalmente, `Veronica` almacena los comprobantes en una base de datos PostgreSQL lo cual le permite realizar posteriores consultas más allá de las comunes como por ejemplo, consultar detalles de facturas, consultar totales o listar comprobantes por emisor o receptor.
 
 Todo comprobante electrónico gestionado a través de `Veronica` manejará un ciclo de vida basado en 4 fases:
 
@@ -18,7 +18,6 @@ Cotenidos
 - [Pasos previos](#pasos-previos)
 - [Instalación](#instalación)
 	- [Despliegue estándar](#coffee-despliegue-estándar)
-	- [Despliegue con Docker](#whale-despliegue-con-docker)
 - [Seguridad](#seguridad)
 	- [Obtención de tokens OAuth2.0](#obtención-de-tokens-oauth20)
 - [Documentación](#documentación)
@@ -51,7 +50,7 @@ $ mvn install:install-file -Dfile=MITyCLibXADES-1.0.4.jar -DgroupId=es.mityc.jav
 $ mvn install:install-file -Dfile=xmlsec-1.4.2-ADSI-1.0.jar -DgroupId=org.apache.xmlsec-adsi -DartifactId=xmlsec-adsi -Dversion=1.4.2 -Dpackaging=jar
 ```
 ## Instalación
-`Veronica` puede ser ejecutado como una aplicación Spring-Boot, la cual requiere la instalación previa de PostgreSQL, o también puede ser ejecutada como un contenedor Docker.
+`Veronica` puede ser ejecutado como una aplicación Spring-Boot la cual requiere la instalación previa de PostgreSQL.
 
 ### :coffee: Despliegue estándar
 
@@ -63,7 +62,7 @@ $ psql -U postgres
 ```
 2. Crear la estructura de tablas ejecutando el script **veronica.sql**.
 ```bash
-$ cd /veronica/veronica-app/src/main/postgres
+$ cd veronica-open-api/src/sql
 $ psql -U postgres veronica < veronica.sql
 ```
 
@@ -74,30 +73,22 @@ encrypt.key = 8qxBjzCdQkwdpu
 
 5. Instalar `Veronica`.
 ```bash
-$ cd /veronica
-$ mvn clean install
+$ cd veronica-open-api
+$ mvn clean package install
 ```
 
 `Veronica` proporciona dos perfiles de despliegue: Desarrollo y Producción. Cada uno de estos perfiles posee un archivo de configuración situado en **/veronica/src/filters**. Para desplegar el proyecto con el perfil adecuado, indicar el ambiente como argumento de ejecución.
 
 `Desarrollo`
 ```bash
-$ cd /veronica/veronica-app
+$ cd veronica-open-api/app
 $ mvn spring-boot:run -Pdevelopment
 ```
 
 `Producción`
 ```bash
-$ cd /veronica/veronica-app
+$ cd veronica-open-api/app
 $ mvn spring-boot:run -Pproduction
-```
-### :whale: Despliegue con Docker 
-Gracias a la integración con Fabric8, es posible ejecutar `Veronica` en un contenedor Docker. Para esto, realizar los siguientes pasos.
-```bash
-$ cd /veronica
-$ mvn clean package install
-$ cd /veronica-app
-$ mvn docker:stop docker:build docker:start
 ```
 
 ## Seguridad
@@ -141,6 +132,7 @@ http://localhost:8080/veronica/swagger-ui.html
 - V8: 2019-05-18, Soporte para Notas de débito.
 - V9: 2019-05-22, Soporte para Docker con Fabric8.
 - V10: 2019-05-28, Seguridad con OAuth2.0.
+- V10: 2019-12-27, Mover dependencias genéricas de Verónica a Sonatype
 
 ## Autor
 | [![](https://avatars1.githubusercontent.com/u/11875482?v=4&s=80)](https://github.com/rolandopalermo) |

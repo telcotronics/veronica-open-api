@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+	<Properties>
+		<Property name="log-path">@filter.log4j.file@</Property>
+		<Property name="LOG_PATTERN">%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</Property>
+	</Properties>
+	
+	<Appenders>
+		<Console name="consoleAppender" target="SYSTEM_OUT" follow="true">
+			<PatternLayout pattern="${LOG_PATTERN}"/>
+		</Console>
+		<RollingFile name="fileAppender" fileName="${log-path}/veronica.log" filePattern="${log-path}/veronica-%d{yyyy-MM-dd}.log">
+			<PatternLayout>
+				<pattern>${LOG_PATTERN}</pattern>
+			</PatternLayout>
+			<Policies>
+				<SizeBasedTriggeringPolicy size="10 MB" />
+			</Policies>
+			<DefaultRolloverStrategy max="10" />
+		</RollingFile>
+	</Appenders>
+	
+	<Loggers>
+		<Root level="error">
+			<AppenderRef ref="consoleAppender" />
+			<AppenderRef ref="fileAppender" />
+		</Root>
+		<Logger name="com.rolandopalermo.facturacion.ec" level="debug" additivity="false">
+			<AppenderRef ref="consoleAppender" />
+			<AppenderRef ref="fileAppender" />
+		</Logger>
+	</Loggers>
+</Configuration>

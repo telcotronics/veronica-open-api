@@ -1,0 +1,1463 @@
+{
+	"info": {
+		"_postman_id": "5da64737-9e67-4299-a911-83e6930c8d28",
+		"name": "Verónica API Reference",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "v1",
+			"item": [
+				{
+					"name": "Facturas",
+					"item": [
+						{
+							"name": "Obtener archivo PDF de factura electrónica",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/veronica/api/v1.0/facturas/:clave-acceso/archivos/pdf",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"veronica",
+										"api",
+										"v1.0",
+										"facturas",
+										":clave-acceso",
+										"archivos",
+										"pdf"
+									],
+									"variable": [
+										{
+											"key": "clave-acceso",
+											"value": "{{clave-acceso}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Autorizar factura electrónica",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/veronica/api/v1.0/facturas/:clave-acceso/autorizar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"veronica",
+										"api",
+										"v1.0",
+										"facturas",
+										":clave-acceso",
+										"autorizar"
+									],
+									"variable": [
+										{
+											"key": "clave-acceso",
+											"value": "{{clave-acceso}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Eliminar factura electrónica",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/veronica/api/v1.0/facturas/:clave-acceso",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"veronica",
+										"api",
+										"v1.0",
+										"facturas",
+										":clave-acceso"
+									],
+									"variable": [
+										{
+											"key": "clave-acceso",
+											"value": "{{clave-acceso}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Enviar factura electrónica al SRI",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/veronica/api/v1.0/facturas/:clave-acceso/enviar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"veronica",
+										"api",
+										"v1.0",
+										"facturas",
+										":clave-acceso",
+										"enviar"
+									],
+									"variable": [
+										{
+											"key": "clave-acceso",
+											"value": "{{clave-acceso}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Obtener archivo XML de factura electrónica",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/veronica/api/v1.0/facturas/:clave-acceso/archivos/xml",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"veronica",
+										"api",
+										"v1.0",
+										"facturas",
+										":clave-acceso",
+										"archivos",
+										"xml"
+									],
+									"variable": [
+										{
+											"key": "clave-acceso",
+											"value": "{{clave-acceso}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Crear factura electrónica",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"id\":\"comprobante\",\r\n   \"version\":\"1.0.0\",\r\n   \"infoTributaria\":{\r\n      \"ambiente\":\"1\",\r\n      \"tipoEmision\":\"1\",\r\n      \"razonSocial\":\"Distribuidora de Suministros Nacional S.A.\",\r\n      \"nombreComercial\":\"Empresa Importadora y Exportadora de Piezas\",\r\n      \"ruc\":\"1091701991001\",\r\n      \"codDoc\":\"01\",\r\n      \"estab\":\"001\",\r\n      \"ptoEmi\":\"001\",\r\n      \"secuencial\":\"000000400\",\r\n      \"dirMatriz\":\"Enrique Guerrero Portilla OE1-34 AV. Galo Plaza Lasso\"\r\n   },\r\n   \"infoFactura\":{\r\n      \"fechaEmision\":\"26/12/2019\",\r\n      \"dirEstablecimiento\":\"Sebastián Moreno S/N Francisco García\",\r\n      \"contribuyenteEspecial\":\"5368\",\r\n      \"obligadoContabilidad\":\"SI\",\r\n      \"tipoIdentificacionComprador\":\"04\",\r\n      \"guiaRemision\":\"001-001-000000001\",\r\n      \"razonSocialComprador\":\"PRUEBAS SERVICIO DE RENTAS INTERNAS\",\r\n      \"identificacionComprador\":\"1713328506001\",\r\n      \"direccionComprador\":\"salinas y santiago\",\r\n      \"totalSinImpuestos\":295000.00,\r\n      \"totalDescuento\":5005.00,\r\n      \"totalImpuesto\":[\r\n         {\r\n         \t\"codigo\":\"3\",\r\n         \t\"codigoPorcentaje\":\"3072\",\r\n            \"baseImponible\":295000.00,\r\n            \"valor\":14750.00\r\n         },\r\n         {\r\n            \"codigo\":\"2\",\r\n            \"codigoPorcentaje\":\"2\",\r\n            \"descuentoAdicional\":5.00,\r\n            \"baseImponible\":309750.00,\r\n            \"valor\":37169.40\r\n         },\r\n         {\r\n            \"codigo\":\"5\",\r\n            \"codigoPorcentaje\":\"5001\",\r\n            \"baseImponible\":12000.00,\r\n            \"valor\":240.00\r\n         }\r\n      ],\r\n      \"propina\":0,\r\n      \"importeTotal\":347159.40,\r\n      \"moneda\":\"DOLAR\",\r\n      \"pagos\":[\r\n         {\r\n            \"formaPago\":\"01\",\r\n            \"total\":347159.40,\r\n            \"plazo\":\"30\",\r\n            \"unidadTiempo\":\"dias\"\r\n         }\r\n      ],\r\n      \"valorRetIva\":10620.00,\r\n      \"valorRetRenta\":2950.00\r\n   },\r\n   \"detalle\":[\r\n      {\r\n         \"codigoPrincipal\":\"125BJC-01\",\r\n         \"codigoAuxiliar\":\"1234D56789-A\",\r\n         \"descripcion\":\"CAMIONETA 4X4 DIESEL 3.7\",\r\n         \"cantidad\":10.00,\r\n         \"precioUnitario\":300000.00,\r\n         \"descuento\":5000.00,\r\n         \"precioTotalSinImpuesto\":295000.00,\r\n         \"detAdicional\":[\r\n            {\r\n               \"nombre\":\"Marca Chevrolet\",\r\n               \"valor\":\"Chevrolet\"\r\n            },\r\n            {\r\n               \"nombre\":\"Modelo\",\r\n               \"valor\":\"2012\"\r\n            },\r\n            {\r\n               \"nombre\":\"Chasis\",\r\n               \"valor\":\"8LDETA03V20003289\"\r\n            }\r\n         ],\r\n         \"impuesto\":[\r\n            {\r\n               \"codigo\":\"3\",\r\n               \"codigoPorcentaje\":\"3072\",\r\n               \"tarifa\":5,\r\n               \"baseImponible\":295000.00,\r\n               \"valor\":14750.00\r\n            },\r\n            {\r\n               \"codigo\":\"2\",\r\n               \"codigoPorcentaje\":\"2\",\r\n               \"tarifa\":12,\r\n               \"baseImponible\":309750.00,\r\n               \"valor\":37170.00\r\n            },\r\n            {\r\n               \"codigo\":\"5\",\r\n               \"codigoPorcentaje\":\"5001\",\r\n               \"tarifa\":0.02,\r\n               \"baseImponible\":12000.00,\r\n               \"valor\":240.00\r\n            }\r\n         ]\r\n      }\r\n   ],\r\n   \"campoAdicional\":[\r\n      {\r\n         \"nombre\":\"Codigo Impuesto ISD\",\r\n         \"value\":\"4580\"\r\n      },\r\n      {\r\n         \"nombre\":\"Impuesto ISD\",\r\n         \"value\":\"15.42x\"\r\n      }\r\n   ]\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8080/veronica/api/v1.0/facturas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"veronica",
+										"api",
+										"v1.0",
+										"facturas"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Retenciones",
+					"item": [
+						{
+							"name": "Obtener archivo XML de comprobante de retencion",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/veronica/api/v1.0/retenciones/:clave-acceso/archivos/xml",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"veronica",
+										"api",
+										"v1.0",
+										"retenciones",
+										":clave-acceso",
+										"archivos",
+										"xml"
+									],
+									"variable": [
+										{
+											"key": "clave-acceso",
+											"value": "{{clave-acceso}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Eliminar comprobante de retencion",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/veronica/api/v1.0/retenciones/:clave-acceso",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"veronica",
+										"api",
+										"v1.0",
+										"retenciones",
+										":clave-acceso"
+									],
+									"variable": [
+										{
+											"key": "clave-acceso",
+											"value": "{{clave-acceso}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Enviar comprobante de retencion al SRI",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/veronica/api/v1.0/retenciones/:clave-acceso/enviar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"veronica",
+										"api",
+										"v1.0",
+										"retenciones",
+										":clave-acceso",
+										"enviar"
+									],
+									"variable": [
+										{
+											"key": "clave-acceso",
+											"value": "{{clave-acceso}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Crear comprobante de retencion",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"id\":\"comprobante\",\r\n   \"version\":\"1.0.0\",\r\n   \"infoTributaria\":{\r\n      \"ambiente\":\"1\",\r\n      \"codDoc\":\"07\",\r\n      \"dirMatriz\":\"Enrique Guerrero Portilla OE1-34 AV. Galo Plaza Lasso\",\r\n      \"estab\":\"002\",\r\n      \"nombreComercial\":\"Empresa Importadora y Exportadora de Piezas y Partes de Equipos de Oficina\",\r\n      \"ptoEmi\":\"001\",\r\n      \"razonSocial\":\"Distribuidora de Suministros Nacional S.A.\",\r\n      \"ruc\":\"1792146739001\",\r\n      \"secuencial\":\"000000001\",\r\n      \"tipoEmision\":\"1\"\r\n   },\r\n   \"infoRetencion\":{\r\n   \t  \"fechaEmision\":\"13/02/2019\",\r\n      \"contribuyenteEspecial\":\"5368\",\r\n      \"dirEstablecimiento\":\"Rodrigo Moreno S/N Francisco García\",\r\n      \"identificacionSujetoRetenido\":\"1713328506001\",\r\n      \"obligadoContabilidad\":\"SI\",\r\n      \"periodoFiscal\":\"01/2019\",\r\n      \"razonSocialSujetoRetenido\":\"Juan Pablo Chávez Núñez\",\r\n      \"tipoIdentificacionSujetoRetenido\":\"04\"\r\n   },\r\n   \"impuesto\":[\r\n      {\r\n         \"codigo\":\"1\",\r\n         \"codigoRetencion\":\"310\",\r\n         \"baseImponible\":96.35,\r\n         \"porcentajeRetener\":1.00,\r\n         \"valorRetenido\":0.96,\r\n         \"codDocSustento\":\"01\",\r\n         \"numDocSustento\":\"004002000163513\",\r\n         \"fechaEmisionDocSustento\":\"26/11/2017\"\r\n      }\r\n   ],\r\n   \"campoAdicional\":[\r\n      {\r\n         \"nombre\":\"ConvenioDobleTributacion\",\r\n         \"value\":\"MA123456\"\r\n      },\r\n      {\r\n         \"nombre\":\"documentoIFIS\",\r\n         \"value\":\"BP2010-01-0014\"\r\n      }\r\n   ]\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8080/veronica/api/v1.0/retenciones",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"veronica",
+										"api",
+										"v1.0",
+										"retenciones"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Obtener archivo PDF de comprobante de retencion",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/veronica/api/v1.0/retenciones/:clave-acceso/archivos/pdf",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"veronica",
+										"api",
+										"v1.0",
+										"retenciones",
+										":clave-acceso",
+										"archivos",
+										"pdf"
+									],
+									"variable": [
+										{
+											"key": "clave-acceso",
+											"value": "{{clave-acceso}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Autorizar comprobante de retencion",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/veronica/api/v1.0/retenciones/:clave-acceso/autorizar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"veronica",
+										"api",
+										"v1.0",
+										"retenciones",
+										":clave-acceso",
+										"autorizar"
+									],
+									"variable": [
+										{
+											"key": "clave-acceso",
+											"value": "{{clave-acceso}}"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Guías",
+					"item": [
+						{
+							"name": "Obtener archivo XML de guía de remisión",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/veronica/api/v1.0/guias-remision/:clave-acceso/archivos/xml",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"veronica",
+										"api",
+										"v1.0",
+										"guias-remision",
+										":clave-acceso",
+										"archivos",
+										"xml"
+									],
+									"variable": [
+										{
+											"key": "clave-acceso",
+											"value": "{{clave-acceso}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Eliminar guía de remisión",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/veronica/api/v1.0/guias-remision/:clave-acceso",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"veronica",
+										"api",
+										"v1.0",
+										"guias-remision",
+										":clave-acceso"
+									],
+									"variable": [
+										{
+											"key": "clave-acceso",
+											"value": "{{clave-acceso}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Autorizar guía de remisión",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/veronica/api/v1.0/guias-remision/:clave-acceso/autorizar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"veronica",
+										"api",
+										"v1.0",
+										"guias-remision",
+										":clave-acceso",
+										"autorizar"
+									],
+									"variable": [
+										{
+											"key": "clave-acceso",
+											"value": "{{clave-acceso}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Obtener archivo PDF de guía de remisión",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/veronica/api/v1.0/guias-remision/:clave-acceso/archivos/pdf",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"veronica",
+										"api",
+										"v1.0",
+										"guias-remision",
+										":clave-acceso",
+										"archivos",
+										"pdf"
+									],
+									"variable": [
+										{
+											"key": "clave-acceso",
+											"value": "{{clave-acceso}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Retorna las guías de remisión asociadas a un emisor",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/veronica/api/v1.0/guias-remision/emisores/:identificador-emisor",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"veronica",
+										"api",
+										"v1.0",
+										"guias-remision",
+										"emisores",
+										":identificador-emisor"
+									],
+									"variable": [
+										{
+											"key": "identificador-emisor",
+											"value": "{{identificador-emisor}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Crear guía de remisión",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"id\":\"comprobante\",\r\n   \"version\":\"1.1.0\",\r\n   \"infoTributaria\":{\r\n      \"ambiente\":\"1\",\r\n      \"codDoc\":\"06\",\r\n      \"dirMatriz\":\"ALPALLANA\",\r\n      \"estab\":\"001\",\r\n      \"nombreComercial\":\"EMPRESA PUBLICA DE HIDROCARBUROS DEL ECUADOR EP PETROECUADOR\",\r\n      \"ptoEmi\":\"501\",\r\n      \"razonSocial\":\"EMPRESA PUBLICA DE HIDROCARBUROS DEL ECUADOR EP PETROECUADOR\",\r\n      \"ruc\":\"1792146739001\",\r\n      \"secuencial\":\"000000008\",\r\n      \"tipoEmision\":\"1\"\r\n   },\r\n   \"infoGuiaRemisionDTO\":{\r\n      \"contribuyenteEspecial\":\"5368\",\r\n      \"dirEstablecimiento\":\"ALPALLANA\",\r\n      \"dirPartida\":\"Av. Eloy Alfaro 34 y Av. Libertad Esq\",\r\n      \"fechaFinTransporte\":\"11/01/2019\",\r\n      \"fechaIniTransporte\":\"10/01/2019\",\r\n      \"obligadoContabilidad\":\"SI\",\r\n      \"placa\":\"MCL0827\",\r\n      \"razonSocialTransportista\":\"Transportes S.A\",\r\n      \"rise\":\"Contribuyente Regimen Simplificado RISE\",\r\n      \"rucTransportista\":\"1796875790001\",\r\n      \"tipoIdentificacionTransportista\":\"04\"\r\n   },\r\n   \"destinatario\":[\r\n      {\r\n         \"codDocSustento\":\"01\",\r\n         \"codEstabDestino\":\"001\",\r\n         \"detalle\":[\r\n            {\r\n               \"cantidad\":10.254632,\r\n               \"codigoAdicional\":\"1234D56789-A\",\r\n               \"codigoInterno\":\"125BJC-01\",\r\n               \"descripcion\":\"DIESEL\",\r\n               \"detAdicional\":[\r\n                  {\r\n                     \"nombre\":\"ABCD\",\r\n                     \"valor\":\"EFGH\"\r\n                  },\r\n                  {\r\n                     \"nombre\":\"ABCD\",\r\n                     \"valor\":\"EFGH\"\r\n                  },\r\n                  {\r\n                     \"nombre\":\"ABCD\",\r\n                     \"valor\":\"EFGH\"\r\n                  }\r\n               ]\r\n            }\r\n         ],\r\n         \"dirDestinatario\":\"Av. Simón Bolívar S/N Intercambiador\",\r\n         \"docAduaneroUnico\":\"0041324846887\",\r\n         \"fechaEmisionDocSustento\":\"19/11/2018\",\r\n         \"identificacionDestinatario\":\"1716849140001\",\r\n         \"motivoTraslado\":\"Venta de Maquinaria de Impresión\",\r\n         \"numAutDocSustento\":\"2110201116302517921467390011234567891\",\r\n         \"numDocSustento\":\"002-001-000000001\",\r\n         \"razonSocialDestinatario\":\"Alvarez Mina John Henry\",\r\n         \"ruta\":\"Quito – Cayambe - Otavalo\"\r\n      },\r\n      {\r\n         \"codDocSustento\":\"01\",\r\n         \"codEstabDestino\":\"001\",\r\n         \"detalle\":[\r\n            {\r\n               \"cantidad\":10.254632,\r\n               \"codigoAdicional\":\"1234D56789-A\",\r\n               \"codigoInterno\":\"125BJC-01\",\r\n               \"descripcion\":\"DIESEL\",\r\n               \"detAdicional\":[\r\n                  {\r\n                     \"nombre\":\"ABCD\",\r\n                     \"valor\":\"EFGH\"\r\n                  },\r\n                  {\r\n                     \"nombre\":\"ABCD\",\r\n                     \"valor\":\"EFGH\"\r\n                  },\r\n                  {\r\n                     \"nombre\":\"ABCD\",\r\n                     \"valor\":\"EFGH\"\r\n                  }\r\n               ]\r\n            }\r\n         ],\r\n         \"dirDestinatario\":\"Av. Simón Bolívar S/N Intercambiador\",\r\n         \"docAduaneroUnico\":\"0041324846887\",\r\n         \"fechaEmisionDocSustento\":\"19/11/2018\",\r\n         \"identificacionDestinatario\":\"0106079783\",\r\n         \"motivoTraslado\":\"Venta de Maquinaria de Toner\",\r\n         \"numAutDocSustento\":\"2110201116302517921467390011234567891\",\r\n         \"numDocSustento\":\"002-001-000000001\",\r\n         \"razonSocialDestinatario\":\"Oscar Montero Campoverde\",\r\n         \"ruta\":\"Quito – Cayambe - Cuenca\"\r\n      }\r\n   ],\r\n   \"campoAdicional\":[\r\n      {\r\n         \"nombre\":\"TELEFONO\",\r\n         \"value\":\"098568541\"\r\n      },\r\n      {\r\n         \"nombre\":\"E-MAIL\",\r\n         \"value\":\"info@organizacion.com\"\r\n      },\r\n      {\r\n         \"nombre\":\"SUCURSAL 03\",\r\n         \"value\":\"Guayaquil–12 de Octubre y Universo\"\r\n      }\r\n   ]\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8080/veronica/api/v1.0/guias-remision",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"veronica",
+										"api",
+										"v1.0",
+										"guias-remision"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Enviar guía de remisión al SRI",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/veronica/api/v1.0/guias-remision/:clave-acceso/enviar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"veronica",
+										"api",
+										"v1.0",
+										"guias-remision",
+										":clave-acceso",
+										"enviar"
+									],
+									"variable": [
+										{
+											"key": "clave-acceso",
+											"value": "{{clave-acceso}}"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Notas de Crédito",
+					"item": [
+						{
+							"name": "Autorizar nota de crédito",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/veronica/api/v1.0/notas-credito/:clave-acceso/autorizar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"veronica",
+										"api",
+										"v1.0",
+										"notas-credito",
+										":clave-acceso",
+										"autorizar"
+									],
+									"variable": [
+										{
+											"key": "clave-acceso",
+											"value": "{{clave-acceso}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Eliminar nota de crédito",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/veronica/api/v1.0/notas-credito/:clave-acceso",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"veronica",
+										"api",
+										"v1.0",
+										"notas-credito",
+										":clave-acceso"
+									],
+									"variable": [
+										{
+											"key": "clave-acceso",
+											"value": "{{clave-acceso}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Obtener archivo XML de nota de crédito",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/veronica/api/v1.0/notas-credito/:clave-acceso/archivos/xml",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"veronica",
+										"api",
+										"v1.0",
+										"notas-credito",
+										":clave-acceso",
+										"archivos",
+										"xml"
+									],
+									"variable": [
+										{
+											"key": "clave-acceso",
+											"value": "{{clave-acceso}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Obtener archivo PDF de nota de crédito",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/veronica/api/v1.0/notas-credito/:clave-acceso/archivos/pdf",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"veronica",
+										"api",
+										"v1.0",
+										"notas-credito",
+										":clave-acceso",
+										"archivos",
+										"pdf"
+									],
+									"variable": [
+										{
+											"key": "clave-acceso",
+											"value": "{{clave-acceso}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Crear nota de crédito",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"id\":\"comprobante\",\r\n\t\"version\": \"1.0.0\",\r\n\t\"infoTributaria\": {\r\n\t\t\"ambiente\": \"1\",\r\n\t\t\"codDoc\": \"04\",\r\n\t\t\"dirMatriz\": \"ENRIQUE GUERRERO PORTILLA OE1-34 AV. GALO PLAZA LASSO\",\r\n\t\t\"estab\": \"002\",\r\n\t\t\"nombreComercial\": \"Empresa Importadora y Exportadora de Piezas\",\r\n\t\t\"ptoEmi\": \"001\",\r\n\t\t\"razonSocial\": \"Distribuidora de Suministros Nacional S.A.\",\r\n\t\t\"ruc\": \"1792146739001\",\r\n\t\t\"secuencial\": \"000000001\",\r\n\t\t\"tipoEmision\": \"1\"\r\n\t},\r\n\t\"infoNotaCredito\": {\r\n\t\t\"codDocModificado\": \"01\",\r\n\t\t\"contribuyenteEspecial\": \"5368\",\r\n\t\t\"dirEstablecimiento\": \"Sebastián Moreno S/N Francisco García\",\r\n\t\t\"fechaEmision\": \"21/04/2019\",\r\n\t\t\"fechaEmisionDocSustento\": \"21/04/2019\",\r\n\t\t\"identificacionComprador\": \"1713328506001\",\r\n\t\t\"moneda\": \"DOLAR\",\r\n\t\t\"motivo\": \"DEVOLUCIÓN\",\r\n\t\t\"numDocModificado\": \"002-001-000000001\",\r\n\t\t\"obligadoContabilidad\": \"SI\",\r\n\t\t\"razonSocialComprador\": \"PRUEBAS SERVICIO DERENTAS INTERNAS\",\r\n\t\t\"rise\": \"Contribuyente Régimen Simplificado RISE\",\r\n\t\t\"tipoIdentificacionComprador\": \"04\",\r\n\t\t\"totalImpuesto\": [\r\n\t\t\t{\r\n\t\t\t\t\"baseImponible\": 295000.00,\r\n\t\t\t\t\"codigo\": \"3\",\r\n\t\t\t\t\"codigoPorcentaje\": \"3072\",\r\n\t\t\t\t\"valor\": 14750.00\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"baseImponible\": 339250.25,\r\n\t\t\t\t\"codigo\": \"2\",\r\n\t\t\t\t\"codigoPorcentaje\": \"2\",\r\n\t\t\t\t\"valor\": 37170.00\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"totalSinImpuestos\": 295000.00,\r\n\t\t\"valorModificacion\": 346920.00\r\n\t},\r\n\t\"detalle\": [\r\n\t\t{\r\n\t\t\"cantidad\": 10.00,\r\n\t\t\"codigoAdicional\": \"1234D56789-A\",\r\n\t\t\"codigoInterno\": \"125BJC-01\",\r\n\t\t\"descripcion\": \"CAMIONETA 4X4 DIESEL 3.7\",\r\n\t\t\"descuento\": 5000.00,\r\n\t\t\"detAdicional\": [\r\n\t\t\t{\r\n\t\t\t\t\"nombre\": \"Marca\",\r\n\t\t\t\t\"valor\": \"Chevrolet\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"nombre\": \"Modelo\",\r\n\t\t\t\t\"valor\": \"2012\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"nombre\": \"Chasis\",\r\n\t\t\t\t\"valor\": \"8LDETA03V20003289\"\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"impuesto\": [\r\n\t\t\t{\r\n\t\t\t\t\"codigo\": \"3\",\r\n\t\t\t\t\"codigoPorcentaje\": \"3072\",\r\n\t\t\t\t\"tarifa\": 5,\r\n\t\t\t\t\"baseImponible\": 295000.00,\r\n\t\t\t\t\"valor\": 14750.00\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"codigo\": \"2\",\r\n\t\t\t\t\"codigoPorcentaje\": \"2\",\r\n\t\t\t\t\"tarifa\": 12,\r\n\t\t\t\t\"baseImponible\": 309750.00,\r\n\t\t\t\t\"valor\": 37170.00\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"precioTotalSinImpuesto\": 295000.00,\r\n\t\t\"precioUnitario\": 30000.00\r\n\t\t}\r\n\t],\r\n  \"campoAdicional\": [\r\n    {\r\n      \"nombre\": \"E-MAIL\",\r\n      \"value\": \"info@organizacion.com\"\r\n    }\r\n  ]\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8080/veronica/api/v1.0/notas-credito",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"veronica",
+										"api",
+										"v1.0",
+										"notas-credito"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Enviar nota de crédito al SRI",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/veronica/api/v1.0/notas-credito/:clave-acceso/enviar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"veronica",
+										"api",
+										"v1.0",
+										"notas-credito",
+										":clave-acceso",
+										"enviar"
+									],
+									"variable": [
+										{
+											"key": "clave-acceso",
+											"value": "{{clave-acceso}}"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Notas de Débito",
+					"item": [
+						{
+							"name": "Autorizar nota de débito",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/veronica/api/v1.0/notas-debito/:clave-acceso/autorizar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"veronica",
+										"api",
+										"v1.0",
+										"notas-debito",
+										":clave-acceso",
+										"autorizar"
+									],
+									"variable": [
+										{
+											"key": "clave-acceso",
+											"value": "{{clave-acceso}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Eliminar nota de débito",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/veronica/api/v1.0/notas-debito/:clave-acceso",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"veronica",
+										"api",
+										"v1.0",
+										"notas-debito",
+										":clave-acceso"
+									],
+									"variable": [
+										{
+											"key": "clave-acceso",
+											"value": "{{clave-acceso}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Obtener archivo PDF de nota de débito",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/veronica/api/v1.0/notas-debito/:clave-acceso/archivos/pdf",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"veronica",
+										"api",
+										"v1.0",
+										"notas-debito",
+										":clave-acceso",
+										"archivos",
+										"pdf"
+									],
+									"variable": [
+										{
+											"key": "clave-acceso",
+											"value": "{{clave-acceso}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Crear nota de débito",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"id\":\"comprobante\",\r\n   \"version\":\"1.0.0\",\r\n\t\"infoTributaria\":{\r\n      \"ambiente\":\"1\",\r\n      \"tipoEmision\":\"1\",\r\n      \"razonSocial\":\"PRUEBA\",\r\n      \"nombreComercial\":\"PRUEBA 2\",\r\n      \"ruc\":\"1760013210001\",\r\n      \"codDoc\":\"05\",\r\n      \"estab\":\"001\",\r\n      \"ptoEmi\":\"001\",\r\n      \"secuencial\":\"000000001\",\r\n      \"dirMatriz\":\"SALINAS\"\r\n   },\r\n   \"infoNotaDebito\":{\r\n   \t  \"fechaEmision\":\"18/05/2019\",\r\n   \t  \"tipoIdentificacionComprador\":\"04\",\r\n   \t  \"razonSocialComprador\":\"PRUEBA SRI\",\r\n   \t  \"identificacionComprador\":\"1713328506001\",\r\n   \t  \"obligadoContabilidad\":\"SI\",\r\n      \"codDocModificado\":\"01\",\r\n      \"numDocModificado\":\"001-001-112312315\",\r\n      \"fechaEmisionDocSustento\":\"18/05/2019\",\r\n      \"contribuyenteEspecial\":\"12345\",\r\n      \"dirEstablecimiento\":\"PAEZ\",\r\n      \"totalSinImpuestos\":50.0,\r\n      \"impuesto\":[\r\n         {\r\n         \t\"codigo\":\"2\",\r\n         \t\"codigoPorcentaje\":\"0\",\r\n         \t\"tarifa\":0,\r\n            \"baseImponible\":0,\r\n            \"valor\":0.00\r\n         }\r\n      ],\r\n      \"valorTotal\":370.08\r\n   },\r\n   \"motivo\":[\r\n      {\r\n         \"razon\":\"AJUSTE DE PRECIOS\",\r\n         \"valor\":370.08\r\n      }\r\n   ],\r\n   \"campoAdicional\":[\r\n      {\r\n         \"nombre\":\"Direccion\",\r\n         \"value\":\"AMAZONAS S/N ROCA\"\r\n      },\r\n      {\r\n         \"nombre\":\"Email\",\r\n         \"value\":\"prueba@sri.gob.ec\"\r\n      }\r\n   ]\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8080/veronica/api/v1.0/notas-debito",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"veronica",
+										"api",
+										"v1.0",
+										"notas-debito"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Obtener archivo XML de nota de débito",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/veronica/api/v1.0/notas-debito/:clave-acceso/archivos/xml",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"veronica",
+										"api",
+										"v1.0",
+										"notas-debito",
+										":clave-acceso",
+										"archivos",
+										"xml"
+									],
+									"variable": [
+										{
+											"key": "clave-acceso",
+											"value": "{{clave-acceso}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Enviar nota de débito al SRI",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/veronica/api/v1.0/notas-debito/:clave-acceso/enviar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"veronica",
+										"api",
+										"v1.0",
+										"notas-debito",
+										":clave-acceso",
+										"enviar"
+									],
+									"variable": [
+										{
+											"key": "clave-acceso",
+											"value": "{{clave-acceso}}"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "operaciones",
+			"item": [
+				{
+					"name": "Crear certificado digital",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "fbf73629-a068-46ba-a355-6e6b167a77f4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"certificado\": \"\",\r\n  \"password\": \"\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/veronica/operaciones/certificados-digitales/empresas/:numeroRuc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"veronica",
+								"operaciones",
+								"certificados-digitales",
+								"empresas",
+								":numeroRuc"
+							],
+							"variable": [
+								{
+									"key": "numeroRuc",
+									"value": "1091701991001"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear usuario",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"admin\",\r\n  \"password\": \"veronica\",\r\n  \"rol\": \"ROLE_ADMIN\",\r\n  \"active\": true\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/veronica/operaciones/usuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"veronica",
+								"operaciones",
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar contraseña de usuario",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"oldPassword\": \"string\",\r\n  \"newPassword\": \"string\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/veronica/operaciones/usuarios/:usuario/password",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"veronica",
+								"operaciones",
+								"usuarios",
+								":usuario",
+								"password"
+							],
+							"variable": [
+								{
+									"key": "usuario",
+									"value": "{{usuario}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear nuevo tipo de impuesto",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"codigo\": \"\",\r\n  \"descripcion\": \"\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/veronica/operaciones/tipos-impuesto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"veronica",
+								"operaciones",
+								"tipos-impuesto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear nuevo método de pago",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"codigo\": \"\",\r\n  \"descripcion\": \"\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/veronica/operaciones/metodos-pago",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"veronica",
+								"operaciones",
+								"metodos-pago"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear nuevo tipo de documento",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"codigo\": \"\",\r\n  \"descripcion\": \"\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/veronica/operaciones/tipos-documento",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"veronica",
+								"operaciones",
+								"tipos-documento"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registra datos de una nueva empresa",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"numeroIdentificacion\": \"\",\r\n\t\"razonSocial\": \"\",\r\n\t\"tipoIdentificacion\": \"\",\r\n\t\"logo\": \"\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/veronica/operaciones/empresas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"veronica",
+								"operaciones",
+								"empresas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Retorna la información asociada a una empresa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/veronica/operaciones/empresas/:identificacion-empresa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"veronica",
+								"operaciones",
+								"empresas",
+								":identificacion-empresa"
+							],
+							"variable": [
+								{
+									"key": "identificacion-empresa",
+									"value": "{{identificacion-empresa}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "oauth",
+			"item": [
+				{
+					"name": "Verificar token OAuth",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{secret}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{client}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/veronica/oauth/check_token?token={{token}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"veronica",
+								"oauth",
+								"check_token"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Generar token OAuth",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{secret}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{client}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/veronica/oauth/token?username={{username}}&password={{password}}&grant_type=password",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"veronica",
+								"oauth",
+								"token"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "{{username}}"
+								},
+								{
+									"key": "password",
+									"value": "{{password}}"
+								},
+								{
+									"key": "grant_type",
+									"value": "password"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

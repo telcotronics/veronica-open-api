@@ -96,12 +96,6 @@
                 <env>prd</env>
             </properties>
         </profile>
-        <profile>
-            <id>docker</id>
-            <properties>
-                <env>docker</env>
-            </properties>
-        </profile>
     </profiles>
 
     <build>

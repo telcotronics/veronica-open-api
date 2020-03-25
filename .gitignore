@@ -1,6 +1,7 @@
 target/
 .project
 .classpath
+.code-workspace
 .settings/
 .svn/
 bin/

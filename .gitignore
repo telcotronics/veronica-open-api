@@ -16,3 +16,16 @@ out/
 /.metadata/
 #IReport
 *.jasper
+app/.factorypath
+
+domain/.factorypath
+
+persistence/.factorypath
+
+ride/.factorypath
+
+service/.factorypath
+
+src/filters/filter-dev.properties
+
+.vscode/settings.json

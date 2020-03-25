@@ -17,11 +17,7 @@ out/
 #IReport
 *.jasper
 app/.factorypath
-
 domain/.factorypath
-
 ride/.factorypath
-
 service/.factorypath
-
 persistence/.factorypath

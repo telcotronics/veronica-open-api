@@ -141,9 +141,9 @@ http://localhost:8080/veronica/swagger-ui.html
 
 ## Colaboradores
 
-| [![](https://avatars2.githubusercontent.com/u/24358710?s=80&v=4)](https://github.com/XaviMontero) | [![](https://avatars0.githubusercontent.com/u/3452663?s=80&v=4)](https://github.com/XaviMontero) |  [![](https://avatars0.githubusercontent.com/u/211490?s=80&v=4)](https://github.com/vperilla) | [![](https://avatars0.githubusercontent.com/u/4059893?s=80&v=4)](https://github.com/andresluzu) 
-|-|-|-|-|
-| [@XaviMontero](https://github.com/XaviMontero) | [@Japstones](https://github.com/japstones) | [@vperilla](https://github.com/vperilla) | [@andresluzu](https://github.com/andresluzu) |
+| [![](https://avatars2.githubusercontent.com/u/24358710?s=80&v=4)](https://github.com/XaviMontero) | [![](https://avatars0.githubusercontent.com/u/3452663?s=80&v=4)](https://github.com/XaviMontero) |  [![](https://avatars0.githubusercontent.com/u/211490?s=80&v=4)](https://github.com/vperilla) | [![](https://avatars0.githubusercontent.com/u/4059893?s=80&v=4)](https://github.com/andresluzu)  | [![](https://avatars0.githubusercontent.com/u/20668624?s=80&v=4)](https://github.com/israteneda)
+|-|-|-|-|-|
+| [@XaviMontero](https://github.com/XaviMontero) | [@Japstones](https://github.com/japstones) | [@vperilla](https://github.com/vperilla) | [@andresluzu](https://github.com/andresluzu) |[@Israel](https://github.com/israteneda) |
 
 ## Patrocinadores
 Apoya este proyecto haciéndote patrocinador. Tu logotipo aparecerá aquí con un enlace a tu sitio web. [[Conviértete en un patrocinador](mailto:rolando.roc@gmail.com)]

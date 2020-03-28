@@ -50,7 +50,7 @@ public class MapperConfig {
 
     @Bean
     public Mapper<LiquidacionCompraDTO, LiquidacionCompra> getPurchaseClearanceMapper() {
-        return new PurchaseClearanceMapper();
+        return new LiquidacionCompraMapper();
     }
 
     @Bean

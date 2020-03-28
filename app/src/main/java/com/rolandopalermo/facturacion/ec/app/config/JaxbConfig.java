@@ -6,7 +6,7 @@ import com.rolandopalermo.facturacion.ec.jaxb.impl.v1_0.CreditMemoJaxbServiceImp
 import com.rolandopalermo.facturacion.ec.jaxb.impl.v1_0.DebitMemoJaxbServiceImpl;
 import com.rolandopalermo.facturacion.ec.jaxb.impl.v1_0.InvoiceJaxbServiceImpl;
 import com.rolandopalermo.facturacion.ec.jaxb.impl.v1_0.WithHoldingJaxbServiceImpl;
-import com.rolandopalermo.facturacion.ec.jaxb.impl.v1_0.PurchaseClearanceJaxbServiceImp;
+import com.rolandopalermo.facturacion.ec.jaxb.impl.v1_0.PurchaseClearanceJaxbServiceImpl;
 import com.rolandopalermo.facturacion.ec.modelo.factura.Factura;
 import com.rolandopalermo.facturacion.ec.modelo.guia.GuiaRemision;
 import com.rolandopalermo.facturacion.ec.modelo.notacredito.NotaCredito;
@@ -41,7 +41,7 @@ public class JaxbConfig {
 
     @Bean
     public JaxbService<LiquidacionCompra> getPCMarshaller() {
-        return new LiquidacionCompraJaxbServiceImpl();
+        return new PurchaseClearanceJaxbServiceImpl();
     }
 
     @Bean

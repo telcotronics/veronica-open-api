@@ -19,7 +19,7 @@ public class PurchaseClearanceServiceImpl extends GenericSRIServiceImpl<Liquidac
         purchaseClearance.setSriVersion(liquidacionCompra.getVersion());
         purchaseClearance.setXmlContent(contentAsXML);
         purchaseClearance.setSupplierId(liquidacionCompra.getInfoTributaria().getRuc());
-        purchaseClearance.setCustomerId(liquidacionCompra.getInfoLiquidacionCompra().getIdentificacionComprador());
+        purchaseClearance.setCustomerId(liquidacionCompra.getInfoLiquidacionCompra().getIdentificacionProveedor());
         purchaseClearance.setIssueDate(DateUtils.getFechaFromStringddMMyyyy(liquidacionCompra.getInfoLiquidacionCompra().getFechaEmision()));
         purchaseClearance.setPurchaseClearanceNumber(liquidacionCompra.getInfoTributaria().getSecuencial());
         purchaseClearance.setInternalStatusId(CREATED);

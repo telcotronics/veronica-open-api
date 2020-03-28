@@ -5,6 +5,7 @@ import com.rolandopalermo.facturacion.ec.dto.v1.cm.NotaCreditoDTO;
 import com.rolandopalermo.facturacion.ec.dto.v1.dm.NotaDebitoDTO;
 import com.rolandopalermo.facturacion.ec.dto.v1.pc.LiquidacionCompraDTO;
 import com.rolandopalermo.facturacion.ec.dto.v1.invoice.FacturaDTO;
+import com.rolandopalermo.facturacion.ec.dto.v1.withholding.ComprobanteRetencionDTO;
 import com.rolandopalermo.facturacion.ec.dto.v1.withholding.RetencionDTO;
 import com.rolandopalermo.facturacion.ec.jaxb.impl.v1_0.SRIResponseJaxbServiceImpl;
 import com.rolandopalermo.facturacion.ec.mapper.Mapper;
@@ -15,6 +16,7 @@ import com.rolandopalermo.facturacion.ec.mapper.pc.LiquidacionCompraMapper;
 import com.rolandopalermo.facturacion.ec.mapper.invoice.FacturaMapper;
 import com.rolandopalermo.facturacion.ec.mapper.sri.RespuestaComprobanteMapper;
 import com.rolandopalermo.facturacion.ec.mapper.sri.RespuestaSolicitudMapper;
+import com.rolandopalermo.facturacion.ec.mapper.withholding.ComprobanteRetencionMapper;
 import com.rolandopalermo.facturacion.ec.mapper.withholding.RetencionMapper;
 import com.rolandopalermo.facturacion.ec.modelo.factura.Factura;
 import com.rolandopalermo.facturacion.ec.modelo.guia.GuiaRemision;
@@ -54,8 +56,8 @@ public class MapperConfig {
     }
 
     @Bean
-    public Mapper<RetencionDTO, ComprobanteRetencion> getWithHoldingMapper() {
-        return new RetencionMapper();
+    public Mapper<ComprobanteRetencionDTO, ComprobanteRetencion> getWithHoldingMapper() {
+        return new ComprobanteRetencionMapper();
     }
 
     @Bean

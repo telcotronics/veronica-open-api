@@ -28,12 +28,17 @@
         <dependency>
             <groupId>com.rolandopalermo.facturacion.ec</groupId>
             <artifactId>veronica-dto</artifactId>
-            <version>1.0.0</version>
+            <version>1.0.1</version>
         </dependency>
         <dependency>
             <groupId>com.rolandopalermo.facturacion.ec</groupId>
             <artifactId>veronica-model</artifactId>
-            <version>1.0.0</version>
+            <version>1.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.rolandopalermo.facturacion.ec</groupId>
+            <artifactId>veronica-dto-model-mapper</artifactId>
+            <version>1.0.1</version>
         </dependency>
         <dependency>
             <groupId>com.rolandopalermo.facturacion.ec</groupId>
@@ -43,7 +48,7 @@
         <dependency>
             <groupId>com.rolandopalermo.facturacion.ec</groupId>
             <artifactId>veronica-jaxb</artifactId>
-            <version>1.0.0</version>
+            <version>1.0.1</version>
         </dependency>
         <!-- Veronica dependencies -->
 

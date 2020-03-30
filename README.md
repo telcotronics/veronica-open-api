@@ -156,7 +156,7 @@ Apoya este proyecto haciéndote patrocinador. Tu logotipo aparecerá aquí con u
 - Soporte para plantillas personalizadas de RIIDEs
 - Contáctanos en [rolando.roc@gmail.com](mailto:rolando.roc@gmail.com) para más información
 
-## Try Veronica Enterprise for Free
+## Try Veronica Enterprise for free
 - [Veronica Enterprise Swagger UI](https://ec-sbox.rolandopalermo.com/facturacion/swagger-ui.html)
 - Best support for all electronic documents including Purchase clearance
 - Support for email notifications with custom templates

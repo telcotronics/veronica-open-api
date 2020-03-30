@@ -27,6 +27,8 @@ Cotenidos
 - [Autor](#autor)
 - [Colaboradores](#colaboradores)
 - [Patrocinadores](#patrocinadores)
+- [Prueba Veronica Enterprise](#prueba-veronica-enterprise-gratis)
+- [Try Veronica Enterprise](#try-veronica-enterprise-for-free)
 
 ## Software requerido
 - JDK 1.8.0_121

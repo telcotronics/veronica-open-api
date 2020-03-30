@@ -153,7 +153,7 @@ Apoya este proyecto haciéndote patrocinador. Tu logotipo aparecerá aquí con u
 - [Veronica Enterprise Swagger UI](https://ec-sbox.rolandopalermo.com/facturacion/swagger-ui.html)
 - Soporte para todos los tipos de documentos electrónicos incluyendo Liquidaciones de compras
 - Soporte para notificaciones por email con plantillas personalizadas
-- Soporte para plantillas personalizadas de RIIDEs
+- Soporte para plantillas personalizadas de RIDEs
 - Contáctanos en [rolando.roc@gmail.com](mailto:rolando.roc@gmail.com) para más información
 
 ## Try Veronica Enterprise for free

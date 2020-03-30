@@ -121,6 +121,10 @@ http://localhost:8080/veronica/swagger-ui.html
 ### Postman
 `Veronica` también pone a disposición de los usuarios una colección de llamadas y ejemplos que se encuentra en la ruta **/src/postman/Verónica API Reference.postman_collection.json**.
 
+## Try Veronica Enterprise for Free
+- [https://ec-sbox.rolandopalermo.com/facturacion/swagger-ui.html] (Veronica Enterprise Swagger UI)
+- Contact us at [[rolando.roc@gmail.com](mailto:rolando.roc@gmail.com)]
+
 ## Bitácora
 
 - V1: 2018-04-12, Primera versión.

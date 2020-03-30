@@ -150,7 +150,7 @@ http://localhost:8080/veronica/swagger-ui.html
 Apoya este proyecto haciéndote patrocinador. Tu logotipo aparecerá aquí con un enlace a tu sitio web. [[Conviértete en un patrocinador](mailto:rolando.roc@gmail.com)]
 
 ## Try Veronica Enterprise for Free
-- [Veronica Enterprise Swagger UI] (https://ec-sbox.rolandopalermo.com/facturacion/swagger-ui.html)
+- [Veronica Enterprise Swagger UI](https://ec-sbox.rolandopalermo.com/facturacion/swagger-ui.html)
 - Best support for all electronic documents including Purchase clearance
 - Support for email notifications with custom templates
 - Support for custom RIDES templates

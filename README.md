@@ -38,7 +38,7 @@ Cotenidos
 
 `Veronica` posee una lista de dependencias que no se encuentran disponibles en el repositorio remoto de Maven por lo que se tendrá que hacer la instalación de forma manual. Para esto, ejecutar los comandos listados a continuación.
 ```bash
-$ cd /veronica/additional_libs
+$ cd /veronica-open-api/additional_libs
 $ mvn install:install-file -Dfile=jss-4.2.5.jar -DgroupId=org.mozilla -DartifactId=jss -Dversion=4.2.5 -Dpackaging=jar
 $ mvn install:install-file -Dfile=MITyCLibAPI-1.0.4.jar -DgroupId=es.mityc.javasign -DartifactId=api -Dversion=1.0.4 -Dpackaging=jar
 $ mvn install:install-file -Dfile=MITyCLibCert-1.0.4.jar -DgroupId=es.mityc.javasign -DartifactId=cert -Dversion=1.0.4 -Dpackaging=jar
@@ -70,6 +70,7 @@ $ psql -U postgres veronica < veronica.sql
 ```bash
 encrypt.key = 8qxBjzCdQkwdpu
 ```
+> Recordar cambiar la clave de conexión de la base de datos en la carpeta `/veronica-open-api/src/filters`
 
 5. Instalar `Veronica`.
 ```bash
@@ -77,7 +78,7 @@ $ cd veronica-open-api
 $ mvn clean package install
 ```
 
-`Veronica` proporciona dos perfiles de despliegue: Desarrollo y Producción. Cada uno de estos perfiles posee un archivo de configuración situado en **/veronica/src/filters**. Para desplegar el proyecto con el perfil adecuado, indicar el ambiente como argumento de ejecución.
+`Veronica` proporciona dos perfiles de despliegue: Desarrollo y Producción. Cada uno de estos perfiles posee un archivo de configuración situado en **/veronica-open-api/src/filters**. Para desplegar el proyecto con el perfil adecuado, indicar el ambiente como argumento de ejecución.
 
 `Desarrollo`
 ```bash
@@ -104,7 +105,7 @@ Para generar un token para el usuario admin, por ejemplo, podermos ejecutar el s
 ```bash
 curl -u veronica:veronica -X POST http://localhost:8080/veronica/oauth/token -H "Accept:application/json" -d "username=admin&password=veronica&grant_type=password"
 ```
-También en el archivo **/veronica/Verónica API Reference.postman_collection.json** de postman podemos encontrar un ejemplo de llamada a este endpoint.
+También en el archivo **/veronica-open-api/src/postman/Verónica API Reference.postman_collection.json** de postman podemos encontrar un ejemplo de llamada a este endpoint.
 
 Con el token generado podemos hacer uso de cualquier de los endpoints que ofrece `Veronica` a través de su API Rest. Para esto, debemos utilizar el token generado a través de una llamada con autenticación Bearer, tal como se muestra a continuación:
 ```bash

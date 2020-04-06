@@ -27,6 +27,8 @@ Cotenidos
 - [Autor](#autor)
 - [Colaboradores](#colaboradores)
 - [Patrocinadores](#patrocinadores)
+- [Prueba Veronica Enterprise](#prueba-veronica-enterprise-gratis)
+- [Try Veronica Enterprise](#try-veronica-enterprise-for-free)
 
 ## Software requerido
 - JDK 1.8.0_121
@@ -148,3 +150,17 @@ http://localhost:8080/veronica/swagger-ui.html
 
 ## Patrocinadores
 Apoya este proyecto haciéndote patrocinador. Tu logotipo aparecerá aquí con un enlace a tu sitio web. [[Conviértete en un patrocinador](mailto:rolando.roc@gmail.com)]
+
+## Prueba Veronica Enterprise gratis
+- [Veronica Enterprise Swagger UI](https://ec-sbox.rolandopalermo.com/facturacion/swagger-ui.html)
+- Soporte para todos los tipos de documentos electrónicos incluyendo Liquidaciones de compras
+- Soporte para notificaciones por email con plantillas personalizadas
+- Soporte para plantillas personalizadas de RIDEs
+- Contáctanos en [rolando.roc@gmail.com](mailto:rolando.roc@gmail.com) para más información
+
+## Try Veronica Enterprise for free
+- [Veronica Enterprise Swagger UI](https://ec-sbox.rolandopalermo.com/facturacion/swagger-ui.html)
+- Best support for all electronic documents including Purchase clearance
+- Support for email notifications with custom templates
+- Support for custom RIDEs templates
+- Contact us at [rolando.roc@gmail.com](mailto:rolando.roc@gmail.com) for further information

@@ -66,13 +66,13 @@
             <artifactId>lombok</artifactId>
         </dependency>
 
-        <!-- Veronica dependencies -->
+        <!-- Veronica Dependencies -->
         <dependency>
             <groupId>com.rolandopalermo.facturacion.ec</groupId>
-            <artifactId>veronica-common</artifactId>
-            <version>1.0.1</version>
+            <artifactId>veronica-dto-model-mapper</artifactId>
+            <version>1.0.2</version>
         </dependency>
-        <!-- Veronica dependencies -->
+        <!-- Veronica Dependencies -->
 
         <!--Validations-->
         <dependency>

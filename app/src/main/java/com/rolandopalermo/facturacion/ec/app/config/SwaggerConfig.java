@@ -21,8 +21,8 @@ public class SwaggerConfig {
                 .paths(PathSelectors.regex("/api/v1.*"))
                 .build()
                 .apiInfo(new ApiInfoBuilder().version("1.0")
-                        .title("API 1.0")
-                        .description("Documentation Veronica API")
+                        .title("Veronica Open API")
+                        .description("\uD83C\uDDEA\uD83C\uDDE8 Implementanción del proceso de facturación electrónica según la normativa vigente del SRI")
                         .build());
     }
 

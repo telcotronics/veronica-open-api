@@ -145,8 +145,7 @@ http://localhost:8080/veronica/swagger-ui.html
 | [@XaviMontero](https://github.com/XaviMontero) | [@Japstones](https://github.com/japstones) | [@vperilla](https://github.com/vperilla) | [@andresluzu](https://github.com/andresluzu) |[@Israel](https://github.com/israteneda) |
 
 ## Patrocinadores
-Apoya este proyecto haciéndote patrocinador; tu logotipo o avatar aparecerá aquí con un enlace a tu sitio web.
-[[Conviértete en un patrocinador](https://github.com/sponsors/rolandopalermo/)]
+[Conviértete en un patrocinador](https://github.com/sponsors/rolandopalermo/)
 
 ## Prueba Veronica Enterprise gratis
 - [Veronica Enterprise Swagger UI](https://ec-sbox.rolandopalermo.com/facturacion/swagger-ui.html)

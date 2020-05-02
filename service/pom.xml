@@ -15,34 +15,16 @@
     </properties>
 
     <dependencies>
-        <!-- Veronica dependencies -->
-        <dependency>
-            <groupId>com.rolandopalermo.facturacion.ec</groupId>
-            <artifactId>veronica-soap</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.rolandopalermo.facturacion.ec</groupId>
-            <artifactId>veronica-dto</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.rolandopalermo.facturacion.ec</groupId>
-            <artifactId>veronica-dto-model-mapper</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-        <!-- Veronica dependencies -->
-
         <!-- Modules -->
         <dependency>
             <groupId>com.rolandopalermo.facturacion.ec</groupId>
             <artifactId>persistence</artifactId>
-            <version>1.0.0</version>
+            <version>${project.parent.version}</version>
         </dependency>
         <dependency>
             <groupId>com.rolandopalermo.facturacion.ec</groupId>
             <artifactId>ride</artifactId>
-            <version>1.0.0</version>
+            <version>${project.parent.version}</version>
         </dependency>
         <!-- Modules -->
 

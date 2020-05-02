@@ -20,32 +20,9 @@
         <dependency>
             <groupId>com.rolandopalermo.facturacion.ec</groupId>
             <artifactId>service</artifactId>
-            <version>1.0.0</version>
+            <version>${project.parent.version}</version>
         </dependency>
         <!-- Modules -->
-
-        <!-- Veronica dependencies -->
-        <dependency>
-            <groupId>com.rolandopalermo.facturacion.ec</groupId>
-            <artifactId>veronica-dto</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.rolandopalermo.facturacion.ec</groupId>
-            <artifactId>veronica-model</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.rolandopalermo.facturacion.ec</groupId>
-            <artifactId>veronica-soap</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.rolandopalermo.facturacion.ec</groupId>
-            <artifactId>veronica-jaxb</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-        <!-- Veronica dependencies -->
 
         <!-- Swagger -->
         <dependency>

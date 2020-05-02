@@ -156,6 +156,8 @@ Apoya este proyecto haciéndote patrocinador. Tu logotipo aparecerá aquí con u
 - Soporte para todos los tipos de documentos electrónicos incluyendo Liquidaciones de compras
 - Soporte para notificaciones por email con plantillas personalizadas
 - Soporte para plantillas personalizadas de RIDEs
+- Soporte para GraphQL
+- Soporte para QueryDSL y REST Query Language
 - Contáctanos en [rolando.roc@gmail.com](mailto:rolando.roc@gmail.com) para más información
 
 ## Try Veronica Enterprise for free
@@ -163,4 +165,6 @@ Apoya este proyecto haciéndote patrocinador. Tu logotipo aparecerá aquí con u
 - Best support for all electronic documents including Purchase clearance
 - Support for email notifications with custom templates
 - Support for custom RIDEs templates
+- GraphQL support
+- QueryDSL & REST Query Language support
 - Contact us at [rolando.roc@gmail.com](mailto:rolando.roc@gmail.com) for further information

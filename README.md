@@ -134,15 +134,15 @@ http://localhost:8080/veronica/swagger-ui.html
 - V11: 2019-12-27, Mover dependencias genéricas de Verónica a Sonatype
 
 ## Autor
-| [![](https://avatars1.githubusercontent.com/u/11875482?v=4&s=80)](https://github.com/rolandopalermo) |
-|-|
-| [@RolandoPalermo](https://github.com/rolandopalermo) |
+| [![](https://avatars1.githubusercontent.com/u/11875482?v=4&s=80)](https://github.com/rolandopalermo)| [![](https://avatars2.githubusercontent.com/u/24358710?s=80&v=4)](https://github.com/XaviMontero) | [![](https://avatars0.githubusercontent.com/u/20668624?s=80&v=4)](https://github.com/israteneda)
+|-|-|-|
+| [@RolandoPalermo](https://github.com/rolandopalermo)| [@XaviMontero](https://github.com/XaviMontero) |[@Israel](https://github.com/israteneda) |
 
 ## Colaboradores
 
-| [![](https://avatars2.githubusercontent.com/u/24358710?s=80&v=4)](https://github.com/XaviMontero) | [![](https://avatars0.githubusercontent.com/u/3452663?s=80&v=4)](https://github.com/XaviMontero) |  [![](https://avatars0.githubusercontent.com/u/211490?s=80&v=4)](https://github.com/vperilla) | [![](https://avatars0.githubusercontent.com/u/4059893?s=80&v=4)](https://github.com/andresluzu)  | [![](https://avatars0.githubusercontent.com/u/20668624?s=80&v=4)](https://github.com/israteneda)
-|-|-|-|-|-|
-| [@XaviMontero](https://github.com/XaviMontero) | [@Japstones](https://github.com/japstones) | [@vperilla](https://github.com/vperilla) | [@andresluzu](https://github.com/andresluzu) |[@Israel](https://github.com/israteneda) |
+| [![](https://avatars0.githubusercontent.com/u/3452663?s=80&v=4)](https://github.com/XaviMontero) |  [![](https://avatars0.githubusercontent.com/u/211490?s=80&v=4)](https://github.com/vperilla) | [![](https://avatars0.githubusercontent.com/u/4059893?s=80&v=4)](https://github.com/andresluzu)
+|-|-|-|
+| [@Japstones](https://github.com/japstones) | [@vperilla](https://github.com/vperilla) | [@andresluzu](https://github.com/andresluzu) |
 
 ## Patrocinadores
 [Conviértete en un patrocinador](https://github.com/sponsors/rolandopalermo/)

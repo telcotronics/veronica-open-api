@@ -1,0 +1,11 @@
+${AnsiColor.GREEN}
+                                                         WW
+
+  WW         WWW  WWWWWWWWWWWW  WWWWWWWWWWWWW      WWWWWWWWWWW       WWWWWWWW     WW     WWWWWWWWWWWW     WWWWWWWWWW
+  WW         WWW  WW            WWW         WWW  WWW        WWWW   WWW      WWW   WW   WWW             WWW          WW
+  WW         WWW  WW            WWW         WWW  WW           WW  WW         WWW  WW   WW              WWW          WW
+   WWW      WWW   WWWWWWWWWWWW  WWWWWWWWWWWWWW   WW           WW  WW          WW  WW   WW              WWWWWWWWWWWWWWW
+    WWW   WWW     WW            WWW         WWW  WWW         WWW  WW          WW  WW   WW              WWW          WW
+      WWWWWW      WWWWWWWWWWWW  WWW         WWW    WWWWWWWWWWW    WW          WW  WW    WWWWWWWWWWWWW  WWW          WW
+
+:: Spring Boot :: ${spring-boot.formatted-version} ${Ansi.DEFAULT}

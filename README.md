@@ -149,18 +149,12 @@ http://localhost:8080/veronica/swagger-ui.html
 
 ## Prueba Veronica Enterprise gratis
 - [Veronica Enterprise Swagger UI](https://veronica-api.rolandopalermo.com/swagger-ui.html)
-- Soporte para todos los tipos de documentos electrónicos incluyendo Liquidaciones de compras
+- Soporte para todos los tipos de documentos electrónicos
 - Soporte para notificaciones por email con plantillas personalizadas
-- Soporte para plantillas personalizadas de RIDEs
-- Soporte para GraphQL
+- Soporte para plantillas personalizadas de RIDEs por razón social y por punto de emisión
 - Soporte para QueryDSL y REST Query Language
 - Contáctanos en [rolando.roc@gmail.com](mailto:rolando.roc@gmail.com) para más información
-
-## Try Veronica Enterprise for free
-- [Veronica Enterprise Swagger UI](https://veronica-api.rolandopalermo.com/swagger-ui.html)
-- Best support for all electronic documents including Purchase clearance
-- Support for email notifications with custom templates
-- Support for custom RIDEs templates
-- GraphQL support
-- QueryDSL & REST Query Language support
-- Contact us at [rolando.roc@gmail.com](mailto:rolando.roc@gmail.com) for further information
+- Precios
+<p align="center">
+<img src="https://raw.githubusercontent.com/rolandopalermo/veronica/master/static/veronica_pricing.jpg" width="500">
+</p>

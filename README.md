@@ -153,7 +153,7 @@ http://localhost:8080/veronica/swagger-ui.html
 - Soporte para notificaciones por email con plantillas personalizadas
 - Soporte para plantillas personalizadas de RIDEs por razón social y por punto de emisión
 - Soporte para QueryDSL y REST Query Language
-- Contáctanos en [rolando.roc@gmail.com](mailto:rolando.roc@gmail.com) para más información
+- Contáctanos en [support@rolandopalermo.com](mailto:support@rolandopalermo.com) para más información
 - Planes y precios
 <p align="center">
 <img src="https://raw.githubusercontent.com/rolandopalermo/veronica/master/static/veronica_pricing.jpg" width="700">

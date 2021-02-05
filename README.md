@@ -1,30 +1,31 @@
-![Veronica Logo](https://raw.githubusercontent.com/rolandopalermo/Veronica/master/static/veronica.jpg)
+![Veronica Logo](https://i.imgur.com/bKoT2BF.png)
 
 `Veronica` es una API Rest de código abierto utilizada para la emisión y autorización de comprobantes electrónicos según la normativa vigente del [Sistema de Rentas Internas del Ecuador](http://www.sri.gob.ec/). El proyecto ha sido desarrollado a través de una aplicación [Spring-Boot 1.5.9.RELEASE](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot/1.5.9.RELEASE). Adicionalmente, `Veronica` almacena los comprobantes en una base de datos PostgreSQL lo cual le permite realizar posteriores consultas más allá de las comunes como por ejemplo, consultar detalles de facturas, consultar totales o listar comprobantes por emisor o receptor.
 
 Todo comprobante electrónico gestionado a través de `Veronica` manejará un ciclo de vida basado en 4 fases:
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/rolandopalermo/veronica/master/static/veronica_ciclo_vida.png" width="500">
+<img src="
+https://i.imgur.com/0pomjmD.png" width="500">
 </p>
 
 Cotenidos
 =================
-- [Software requerido](#software-requerido)
-- [Pasos previos](#pasos-previos)
-- [Instalación](#instalación)
-	- [Despliegue estándar](#coffee-despliegue-estándar)
-- [Seguridad](#seguridad)
-	- [Obtención de tokens OAuth2.0](#obtención-de-tokens-oauth20)
-- [Documentación](#documentación)
-	- [Swagger](#swagger)
-	- [Postman](#postman)
-- [Bitácora](#bitácora)
-- [Autor](#autor)
-- [Colaboradores](#colaboradores)
-- [Patrocinadores](#patrocinadores)
-- [Prueba Veronica Enterprise](#prueba-veronica-enterprise-gratis)
-- [Try Veronica Enterprise](#try-veronica-enterprise-for-free)
+- [Cotenidos](#cotenidos)
+	- [Software requerido](#software-requerido)
+	- [Pasos previos](#pasos-previos)
+	- [Instalación](#instalación)
+		- [Despliegue estándar](#despliegue-estándar)
+	- [Seguridad](#seguridad)
+		- [Obtención de tokens OAuth2.0](#obtención-de-tokens-oauth20)
+	- [Documentación](#documentación)
+		- [Swagger](#swagger)
+		- [Postman](#postman)
+	- [Bitácora](#bitácora)
+	- [Autores](#autores)
+	- [Colaboradores](#colaboradores)
+	- [Patrocinadores](#patrocinadores)
+	- [Prueba Veronica Enterprise gratis](#prueba-veronica-enterprise-gratis)
 
 ## Software requerido
 - JDK 1.8.0_121
@@ -155,6 +156,7 @@ http://localhost:8080/veronica/swagger-ui.html
 - Soporte para QueryDSL y REST Query Language
 - Contáctanos en [support@rolandopalermo.com](mailto:support@rolandopalermo.com) para más información
 - Planes y precios
-<p align="center">
-<img src="https://raw.githubusercontent.com/rolandopalermo/veronica/master/static/veronica_pricing.jpg" width="700">
-</p>
+
+|<h2 style="color:#0b54a5"> <strong> $3.99  </strong></h2>📝Estándar   	| <h2 style="color:#0b54a5"> <strong>$6.99 </strong><br></h2>🚀Profesional 	| <h2 style="color:#0b54a5"> <strong>$18.99 </strong></h2>🏢 Enterprise 	|
+|:-:	|:-:	|:-:	|
+| ✔️Comprobantes/mensual: 0 - 200<br>✔️Ambiente de pruebas<br>✔️Almacenamiento de comprobantes: 2 meses 	| ✔️Comprobantes/mensual: 200 - 5000<br>✔️Soporte por chat<br>✔️Personalización de RIDES<br>✔️Ambiente de pruebas<br>✔️Almacenamiento de comprobantes: 3 meses 	| ✔️Comprobantes/mensual: 5000 - ilimitada<br>✔️Soporte por videollamada<br>✔️Personalizacion por RIDES<br>✔️Personalización de plantilla de correo electrónico<br>✔️Ambiente de pruebas<br>✔️Almacenamiento de comprobantes: ilimitado 	|

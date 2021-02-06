@@ -7,7 +7,7 @@
 Todo comprobante electrónico gestionado a través de `Veronica` manejará un ciclo de vida basado en 4 fases:
 
 <p align="center">
-<img src="https://i.imgur.com/84MHZsA.png" width="500">
+<img src="https://i.imgur.com/84MHZsA.png" width="1200">
 </p>
 
 Cotenidos

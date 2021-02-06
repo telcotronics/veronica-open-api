@@ -1,11 +1,13 @@
-![Veronica Logo](https://i.imgur.com/rw5AOmy.png)
+<p align="center"">
+<img src="https://i.imgur.com/rw5AOmy.png">
+</p>
 
 `Veronica` es una API Rest de código abierto utilizada para la emisión y autorización de comprobantes electrónicos según la normativa vigente del [Sistema de Rentas Internas del Ecuador](http://www.sri.gob.ec/). El proyecto ha sido desarrollado a través de una aplicación [Spring-Boot 1.5.9.RELEASE](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot/1.5.9.RELEASE). Adicionalmente, `Veronica` almacena los comprobantes en una base de datos PostgreSQL lo cual le permite realizar posteriores consultas más allá de las comunes como por ejemplo, consultar detalles de facturas, consultar totales o listar comprobantes por emisor o receptor.
 
 Todo comprobante electrónico gestionado a través de `Veronica` manejará un ciclo de vida basado en 4 fases:
 
 <p align="center">
-<img src="https://i.imgur.com/0pomjmD.png" width="500">
+<img src="https://i.imgur.com/8WRfsZc.png" width="500">
 </p>
 
 Cotenidos
@@ -156,6 +158,6 @@ http://localhost:8080/veronica/swagger-ui.html
 - Contáctanos en [support@rolandopalermo.com](mailto:support@rolandopalermo.com) para más información
 - Planes y precios
 
-|<h2 style="color:#0b54a5"> <strong> $3.99  </strong></h2>📝Estándar   	| <h2 style="color:#0b54a5"> <strong>$6.99 </strong><br></h2>🚀Profesional 	| <h2 style="color:#0b54a5"> <strong>$18.99 </strong></h2>🏢 Enterprise 	|
+|<h2> <strong> $3.99  </strong><br>📝Estándar </h2>  	| <h2> <strong>$6.99 </strong><br>🚀Profesional </h2> 	| <h2> <strong>$18.99 </strong><br>🏢 Enterprise </h2>	|
 |:-:	|:-:	|:-:	|
 | ✔️Comprobantes/mensual: 0 - 200<br>✔️Ambiente de pruebas<br>✔️Almacenamiento de comprobantes: 2 meses 	| ✔️Comprobantes/mensual: 200 - 5000<br>✔️Soporte por chat<br>✔️Personalización de RIDES<br>✔️Ambiente de pruebas<br>✔️Almacenamiento de comprobantes: 3 meses 	| ✔️Comprobantes/mensual: 5000 - ilimitada<br>✔️Soporte por videollamada<br>✔️Personalizacion por RIDES<br>✔️Personalización de plantilla de correo electrónico<br>✔️Ambiente de pruebas<br>✔️Almacenamiento de comprobantes: ilimitado 	|

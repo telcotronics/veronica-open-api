@@ -156,8 +156,3 @@ http://localhost:8080/veronica/swagger-ui.html
 - Soporte para plantillas personalizadas de RIDEs por razón social y por punto de emisión
 - Soporte para QueryDSL y REST Query Language
 - Contáctanos en [support@rolandopalermo.com](mailto:support@rolandopalermo.com) para más información
-- Planes y precios
-
-|<h2> <strong> $3.99  </strong><br>📝Estándar </h2>  	| <h2> <strong>$6.99 </strong><br>🚀Profesional </h2> 	| <h2> <strong>$18.99 </strong><br>🏢 Enterprise </h2>	|
-|:-:	|:-:	|:-:	|
-| ✔️Comprobantes/mensual: 0 - 200<br>✔️Ambiente de pruebas<br>✔️Almacenamiento de comprobantes: 2 meses 	| ✔️Comprobantes/mensual: 200 - 5000<br>✔️Soporte por chat<br>✔️Personalización de RIDES<br>✔️Ambiente de pruebas<br>✔️Almacenamiento de comprobantes: 3 meses 	| ✔️Comprobantes/mensual: 5000 - ilimitada<br>✔️Soporte por videollamada<br>✔️Personalizacion por RIDES<br>✔️Personalización de plantilla de correo electrónico<br>✔️Ambiente de pruebas<br>✔️Almacenamiento de comprobantes: ilimitado 	|

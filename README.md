@@ -1,5 +1,5 @@
 <p align="center"">
-<img src="https://i.imgur.com/rw5AOmy.png">
+<img src="https://i.imgur.com/RgsiR8G.png" width="300">
 </p>
 
 `Veronica` es una API Rest de código abierto utilizada para la emisión y autorización de comprobantes electrónicos según la normativa vigente del [Sistema de Rentas Internas del Ecuador](http://www.sri.gob.ec/). El proyecto ha sido desarrollado a través de una aplicación [Spring-Boot 1.5.9.RELEASE](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot/1.5.9.RELEASE). Adicionalmente, `Veronica` almacena los comprobantes en una base de datos PostgreSQL lo cual le permite realizar posteriores consultas más allá de las comunes como por ejemplo, consultar detalles de facturas, consultar totales o listar comprobantes por emisor o receptor.
@@ -7,7 +7,7 @@
 Todo comprobante electrónico gestionado a través de `Veronica` manejará un ciclo de vida basado en 4 fases:
 
 <p align="center">
-<img src="https://i.imgur.com/84MHZsA.png" width="1200">
+<img src="https://raw.githubusercontent.com/rolandopalermo/veronica/master/static/veronica_ciclo_vida.png" width="1200">
 </p>
 
 Cotenidos
@@ -149,8 +149,9 @@ http://localhost:8080/veronica/swagger-ui.html
 ## Patrocinadores
 [Conviértete en un patrocinador](https://github.com/sponsors/rolandopalermo/)
 
-## Prueba Veronica Enterprise gratis
-- [Veronica Enterprise Swagger UI](https://veronica-api.rolandopalermo.com/swagger-ui.html)
+## Prueba Veronica Enterprise
+- Anexo 21 – Requisito obligatorio para comprobantes electrónicos emitidos por
+contribuyentes designados Microempresas y/o Agentes de Retención.
 - Soporte para todos los tipos de documentos electrónicos
 - Soporte para notificaciones por email con plantillas personalizadas
 - Soporte para plantillas personalizadas de RIDEs por razón social y por punto de emisión

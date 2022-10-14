@@ -57,10 +57,14 @@ mvn install:install-file -Dfile=xmlsec-1.4.2-ADSI-1.0.jar -DgroupId=org.apache.x
 ### Previa configuracion para servidores linux
 #### importamos la llave para evitar errores de firmas 
 ```bash
-	curl -fsSL https://www.postgresql.org/media/keys/ACCC4CF8.asc|sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/postgresql.gpg	
-```		
+curl -fsSL https://www.postgresql.org/media/keys/ACCC4CF8.asc|sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/postgresql.gpg	
+```	
+
 #Agregamos el repositorio de PSQL version 11													
-```bash echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" |sudo tee  /etc/apt/sources.list.d/pgdg.list ```
+```bash 
+echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" |sudo tee  /etc/apt/sources.list.d/pgdg.list 
+```
+
 #verificamos el repo
 ```bash 
 deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg main 
@@ -73,7 +77,19 @@ sudo apt -y install postgresql-11
 ```
 
 #agregamos exception al firewall
-```bash sudo ufw allow 5432/tcp	 ```									    
+```bash 
+sudo ufw allow 5432/tcp	 
+```									    
+### archivo necesarios a configurar
+```bash 
+/etc/postgresql/11/main/
+#modificar postgresql.conf
+listen_addresses = '*' => aqui tu ip por seguridad
+#modificar pg_hba.conf
+local   all      postgres      peer 
+#cambiar "peer" por "md5"
+local   all      postgres      md5
+```
 
 ### Continuando con el Despliegue estándar										       
 # Abrir una consola o shell y crear la base de datos.

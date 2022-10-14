@@ -54,18 +54,18 @@ mvn install:install-file -Dfile=xmlsec-1.4.2-ADSI-1.0.jar -DgroupId=org.apache.x
 
 ### Despliegue estándar
 ### Previa configuracion para servidores linux
-# importamos la llave para evitar errores de firmas 
-0.1. curl -fsSL https://www.postgresql.org/media/keys/ACCC4CF8.asc|sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/postgresql.gpg			
+#### importamos la llave para evitar errores de firmas 
+```bash curl -fsSL https://www.postgresql.org/media/keys/ACCC4CF8.asc|sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/postgresql.gpg	```		
 #Agregamos el repositorio de PSQL version 11													
-0.2. echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" |sudo tee  /etc/apt/sources.list.d/pgdg.list
+```bash echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" |sudo tee  /etc/apt/sources.list.d/pgdg.list ```
 #verificamos el repo
-deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg main
+```bash deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg main ```
 #actualizar y instalamos										    
-sudo apt update
-sudo apt -y install postgresql-11	
+```bash sudo apt update
+sudo apt -y install postgresql-11	```
 
 #agregamos exception al firewall
-sudo ufw allow 5432/tcp										    
+```bash sudo ufw allow 5432/tcp	 ```									    
 									       
 1. Abrir una consola o shell y crear la base de datos.
 ```bash

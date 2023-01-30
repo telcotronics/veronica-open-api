@@ -181,7 +181,7 @@ http://localhost:8080/veronica/swagger-ui.html
 - V11: 2019-12-27, Mover dependencias genéricas de Verónica a Sonatype
 
 ## Autores
-| [![](https://avatars1.githubusercontent.com/u/11875482?v=4&s=80)](https://github.com/rolandopalermo)| [![](https://avatars2.githubusercontent.com/u/24358710?s=80&v=4)](https://github.com/XaviMontero) | [![](https://avatars0.githubusercontent.com/u/20668624?s=80&v=4)](https://github.com/israteneda)
+| [![](https://avatars1.githubusercontent.com/u/11875482?v=4&s=80)](https://github.com/rolandopalermo)| [![](https://avatars2.githubusercontent.com/u/24358710?s=80&v=4)](https://github.com/XaviMontero) | [![](https://avatars0.githubusercontent.com/u/20668624?s=80&v=4)](https://github.com/israteneda)| [![](https://avatars.githubusercontent.com/u/27124364?s=96&v=4)]([https://github.com/israteneda](https://github.com/telcotronics))
 |-|-|-|-|
 | [@RolandoPalermo](https://github.com/rolandopalermo)| [@XaviMontero](https://github.com/XaviMontero) |[@Israel](https://github.com/israteneda) |[@Telcotronics](https://github.com/telcotronics) |
 

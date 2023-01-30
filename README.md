@@ -130,6 +130,13 @@ $ cd veronica-open-api/app
 $ mvn spring-boot:run -Pproduction
 ```
 
+`Despliegue con DOCKER`
+```bash
+$ cd /veronica
+$ mvn clean package install
+$ cd /veronica-app
+$ mvn docker:stop docker:build docker:start
+			    
 ## Seguridad
 Al instalar la base de datos de `Veronica`, automáticamente se crearán dos usuarios con sus respectivas contraseñas y roles.
 
@@ -175,7 +182,7 @@ http://localhost:8080/veronica/swagger-ui.html
 
 ## Autores
 | [![](https://avatars1.githubusercontent.com/u/11875482?v=4&s=80)](https://github.com/rolandopalermo)| [![](https://avatars2.githubusercontent.com/u/24358710?s=80&v=4)](https://github.com/XaviMontero) | [![](https://avatars0.githubusercontent.com/u/20668624?s=80&v=4)](https://github.com/israteneda)
-|-|-|-|
+|-|-|-|-|
 | [@RolandoPalermo](https://github.com/rolandopalermo)| [@XaviMontero](https://github.com/XaviMontero) |[@Israel](https://github.com/israteneda) |[@Telcotronics](https://github.com/telcotronics) |
 
 ## Colaboradores

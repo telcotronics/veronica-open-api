@@ -135,7 +135,7 @@ $ mvn spring-boot:run -Pproduction
 $ cd /veronica
 $ mvn clean package install
 $ cd /veronica-app
-$ mvn docker:stop docker:build docker:start
+$ mvn docker:stop docker:build docker:start```
 			    
 ## Seguridad
 Al instalar la base de datos de `Veronica`, automáticamente se crearán dos usuarios con sus respectivas contraseñas y roles.

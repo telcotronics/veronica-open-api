@@ -135,7 +135,8 @@ $ mvn spring-boot:run -Pproduction
 $ cd /veronica
 $ mvn clean package install
 $ cd /veronica-app
-$ mvn docker:stop docker:build docker:start```
+$ mvn docker:stop docker:build docker:start
+```
 			    
 ## Seguridad
 Al instalar la base de datos de `Veronica`, automáticamente se crearán dos usuarios con sus respectivas contraseñas y roles.
@@ -148,20 +149,20 @@ Al instalar la base de datos de `Veronica`, automáticamente se crearán dos usu
 ### Obtención de tokens OAuth2.0
 Para generar un token para el usuario admin, por ejemplo, podermos ejecutar el siguiente comando curl:
 ```bash
-curl -u veronica:veronica -X POST http://localhost:8080/veronica/oauth/token -H "Accept:application/json" -d "username=admin&password=veronica&grant_type=password"
+curl -u veronica:veronica -X POST http://localhost:8081/sigma/oauth/token -H "Accept:application/json" -d "username=admin&password=veronica&grant_type=password"
 ```
 También en el archivo **/veronica-open-api/src/postman/Verónica API Reference.postman_collection.json** de postman podemos encontrar un ejemplo de llamada a este endpoint.
 
 Con el token generado podemos hacer uso de cualquier de los endpoints que ofrece `Veronica` a través de su API Rest. Para esto, debemos utilizar el token generado a través de una llamada con autenticación Bearer, tal como se muestra a continuación:
 ```bash
-curl http://localhost:8080/veronica/api/v1.0/facturas/2204201901109170199100120010010001467560014675614/archivos/xml -H "Authorization: Bearer 77ed953e-b3b6-4ea1-820e-2e9acc702293"
+curl http://localhost:8081/sigma/api/v1.0/facturas/2204201901109170199100120010010001467560014675614/archivos/xml -H "Authorization: Bearer 77ed953e-b3b6-4ea1-820e-2e9acc702293"
 ```
 
 ## Documentación
 ### Swagger
 Para acceder, debemos utilizar los usuarios indicados en la sección anterior.
 
-http://localhost:8080/veronica/swagger-ui.html
+http://localhost:8081/sigma/swagger-ui.html
 
 ### Postman
 `Veronica` también pone a disposición de los usuarios una colección de llamadas y ejemplos que se encuentra en la ruta **/src/postman/Verónica API Reference.postman_collection.json**.

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RIDE_guia_remision_dest_detalles" pageWidth="400" pageHeight="802" whenNoDataType="AllSectionsNoDetail" columnWidth="400" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="8a37936c-b63a-4ec2-b8e6-bd5c2e6b270e">
+	<property name="ireport.zoom" value="2.6573415000000016"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="etiqueta-celda" hAlign="Left" vAlign="Middle" isBlankWhenNull="true" fontSize="8" isBold="false">
+		<pen lineColor="#013870"/>
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+			<topPen lineWidth="1.0" lineColor="#000000"/>
+			<leftPen lineWidth="1.0" lineColor="#000000"/>
+			<bottomPen lineWidth="1.0" lineColor="#000000"/>
+			<rightPen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+		<paragraph leftIndent="2"/>
+	</style>
+	<field name="codigoInterno" class="java.lang.String">
+		<fieldDescription><![CDATA[codigoInterno]]></fieldDescription>
+	</field>
+	<field name="descripcion" class="java.lang.String">
+		<fieldDescription><![CDATA[descripcion]]></fieldDescription>
+	</field>
+	<field name="cantidad" class="java.lang.String">
+		<fieldDescription><![CDATA[cantidad]]></fieldDescription>
+	</field>
+	<field name="codigoAdicional" class="java.lang.String">
+		<fieldDescription><![CDATA[codigoAdicional]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnHeader>
+		<band height="20">
+			<staticText>
+				<reportElement style="etiqueta-celda" mode="Opaque" x="0" y="0" width="100" height="20" forecolor="#FFFFFF" backcolor="#013870" uuid="b0fd0cdf-f588-4c29-9008-8ec869b47561"/>
+				<box>
+					<pen lineColor="#013870"/>
+					<topPen lineColor="#013870"/>
+					<leftPen lineColor="#013870"/>
+					<bottomPen lineColor="#013870"/>
+					<rightPen lineColor="#013870"/>
+				</box>
+				<text><![CDATA[Cantidad]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="etiqueta-celda" mode="Opaque" x="100" y="0" width="100" height="20" forecolor="#FFFFFF" backcolor="#013870" uuid="7ea5fd65-7c68-4cf4-86dd-82e948f01014"/>
+				<box>
+					<pen lineColor="#013870"/>
+					<topPen lineColor="#013870"/>
+					<leftPen lineColor="#013870"/>
+					<bottomPen lineColor="#013870"/>
+					<rightPen lineColor="#013870"/>
+				</box>
+				<text><![CDATA[Descripción]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="etiqueta-celda" mode="Opaque" x="200" y="0" width="100" height="20" forecolor="#FFFFFF" backcolor="#013870" uuid="79b4d457-4ca4-4ed9-a2ed-efa3b09a759f"/>
+				<box>
+					<pen lineColor="#013870"/>
+					<topPen lineColor="#013870"/>
+					<leftPen lineColor="#013870"/>
+					<bottomPen lineColor="#013870"/>
+					<rightPen lineColor="#013870"/>
+				</box>
+				<text><![CDATA[Código Principal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="etiqueta-celda" mode="Opaque" x="300" y="0" width="100" height="20" forecolor="#FFFFFF" backcolor="#013870" uuid="df8a40ba-40aa-4448-8c1e-7992bfc1809d"/>
+				<box>
+					<pen lineColor="#013870"/>
+					<topPen lineColor="#013870"/>
+					<leftPen lineColor="#013870"/>
+					<bottomPen lineColor="#013870"/>
+					<rightPen lineColor="#013870"/>
+				</box>
+				<text><![CDATA[Código Auxiliar]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<textField>
+				<reportElement style="etiqueta-celda" x="0" y="0" width="100" height="20" uuid="a6a6bb2d-83f7-44d1-8fe6-4eaaae5974b3"/>
+				<box>
+					<pen lineColor="#013870"/>
+					<topPen lineColor="#013870"/>
+					<leftPen lineColor="#013870"/>
+					<bottomPen lineColor="#013870"/>
+					<rightPen lineColor="#013870"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{cantidad}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="etiqueta-celda" x="100" y="0" width="100" height="20" uuid="190f5cd7-6fea-414a-b70a-6cb969a22d7c"/>
+				<box>
+					<pen lineColor="#013870"/>
+					<topPen lineColor="#013870"/>
+					<leftPen lineColor="#013870"/>
+					<bottomPen lineColor="#013870"/>
+					<rightPen lineColor="#013870"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{descripcion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="etiqueta-celda" x="200" y="0" width="100" height="20" uuid="1cefeb91-5a85-4e15-b6a6-897fe2b4f7c9"/>
+				<box>
+					<pen lineColor="#013870"/>
+					<topPen lineColor="#013870"/>
+					<leftPen lineColor="#013870"/>
+					<bottomPen lineColor="#013870"/>
+					<rightPen lineColor="#013870"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{codigoInterno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="etiqueta-celda" x="300" y="0" width="100" height="20" uuid="592bf4d7-3516-44ef-b531-f77223856ef9"/>
+				<box>
+					<pen lineColor="#013870"/>
+					<topPen lineColor="#013870"/>
+					<leftPen lineColor="#013870"/>
+					<bottomPen lineColor="#013870"/>
+					<rightPen lineColor="#013870"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{codigoAdicional}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

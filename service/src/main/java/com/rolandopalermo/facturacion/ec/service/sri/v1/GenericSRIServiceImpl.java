@@ -20,7 +20,7 @@ import com.rolandopalermo.facturacion.ec.mapper.sri.RespuestaSolicitudMapper;
 import com.rolandopalermo.facturacion.ec.modelo.Comprobante;
 import com.rolandopalermo.facturacion.ec.persistence.BaseSRIRepository;
 import com.rolandopalermo.facturacion.ec.persistence.DigitalCertRepository;
-import com.rolandopalermo.facturacion.ec.ride.RIDEGenerator;
+import com.rolandopalermo.facturacion.ec.ride.RIDEGenerador;
 import com.rolandopalermo.facturacion.ec.service.common.JAXBConverterFactory;
 import com.rolandopalermo.facturacion.ec.service.common.SignerUtils;
 import com.rolandopalermo.facturacion.ec.service.sri.GenericSRIService;
@@ -70,7 +70,7 @@ public abstract class GenericSRIServiceImpl<DTO extends ComprobanteDTO, MODEL ex
     private RespuestaSolicitudMapper respuestaSolicitudMapper;
 
     @Autowired
-    private RIDEGenerator rideGenerator;
+    private RIDEGenerador rideGenerator;
 
     @Autowired
     private BaseSRIRepository<DOMAIN, Long> repository;

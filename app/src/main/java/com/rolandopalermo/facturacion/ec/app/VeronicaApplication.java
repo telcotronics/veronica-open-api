@@ -17,7 +17,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 public class VeronicaApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(VeronicaApplication.class, args);
+        SpringApplication.run(com.rolandopalermo.facturacion.ec.app.VeronicaApplication.class, args);
     }
 
 }

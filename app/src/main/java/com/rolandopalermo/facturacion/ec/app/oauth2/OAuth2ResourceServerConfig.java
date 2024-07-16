@@ -30,6 +30,7 @@ public class OAuth2ResourceServerConfig extends ResourceServerConfigurerAdapter 
         resources.tokenStore(tokenStore);
     }
 
+    //se establec parametros para el control tipo admini que crear las operaciones y el tipo user que solo puede consultar
     @Override
     public void configure(HttpSecurity http) throws Exception {
         http

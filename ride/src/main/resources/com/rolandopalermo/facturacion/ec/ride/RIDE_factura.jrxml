@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.8.0.final using JasperReports Library version 6.8.0-2ed8dfabb690ff337a5797129f2cd92902b0c87b  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RIDE_factura" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="23078fe1-b005-44ae-8dc0-7a1396cac66c">
 	<property name="ireport.zoom" value="1.6500000000000052"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="493"/>
-	<style name="etiqueta-texto" hAlign="Left" vAlign="Middle" isBlankWhenNull="true">
+	<style name="etiqueta-texto" hTextAlign="Left" hImageAlign="Left" vTextAlign="Middle" vImageAlign="Middle" isBlankWhenNull="true">
 		<paragraph leftIndent="2"/>
 	</style>
-	<style name="etiqueta-celda" hAlign="Left" vAlign="Middle" isBlankWhenNull="true" fontSize="8" isBold="false">
+	<style name="etiqueta-celda" hTextAlign="Left" hImageAlign="Left" vTextAlign="Middle" vImageAlign="Middle" isBlankWhenNull="true" fontSize="8" isBold="false">
 		<box>
 			<pen lineWidth="1.0" lineColor="#000000"/>
 			<topPen lineWidth="1.0" lineColor="#000000"/>
@@ -162,8 +163,11 @@
 	<field name="unidadTiempo" class="java.lang.String">
 		<fieldDescription><![CDATA[infoFactura/pagos/pago/unidadTiempo]]></fieldDescription>
 	</field>
-	<field name="subtotal12" class="java.lang.String">
-		<fieldDescription><![CDATA[infoFactura/totalConImpuestos/totalImpuesto[codigo='2' and codigoPorcentaje='2']/baseImponible]]></fieldDescription>
+	<field name="subtotal5" class="java.lang.String">
+		<fieldDescription><![CDATA[infoFactura/totalConImpuestos/totalImpuesto[codigo='2' and codigoPorcentaje='5']/baseImponible]]></fieldDescription>
+	</field>
+	<field name="subtotal15" class="java.lang.String">
+		<fieldDescription><![CDATA[infoFactura/totalConImpuestos/totalImpuesto[codigo='2' and codigoPorcentaje='4']/baseImponible]]></fieldDescription>
 	</field>
 	<field name="totalSinImpuestos" class="java.lang.String">
 		<fieldDescription><![CDATA[infoFactura/totalSinImpuestos]]></fieldDescription>
@@ -171,8 +175,11 @@
 	<field name="importeTotal" class="java.lang.String">
 		<fieldDescription><![CDATA[infoFactura/importeTotal]]></fieldDescription>
 	</field>
-	<field name="iva12" class="java.lang.String">
-		<fieldDescription><![CDATA[infoFactura/totalConImpuestos/totalImpuesto[codigo='2' and codigoPorcentaje='2']/valor]]></fieldDescription>
+	<field name="iva5" class="java.lang.String">
+		<fieldDescription><![CDATA[infoFactura/totalConImpuestos/totalImpuesto[codigo='2' and codigoPorcentaje='5']/valor]]></fieldDescription>
+	</field>
+	<field name="iva15" class="java.lang.String">
+		<fieldDescription><![CDATA[infoFactura/totalConImpuestos/totalImpuesto[codigo='2' and codigoPorcentaje='4']/valor]]></fieldDescription>
 	</field>
 	<field name="subtotal0" class="java.lang.String">
 		<fieldDescription><![CDATA[infoFactura/totalConImpuestos/totalImpuesto[codigo='2' and codigoPorcentaje='0']/baseImponible]]></fieldDescription>
@@ -726,13 +733,13 @@
 				</jr:list>
 			</componentElement>
 		</band>
-		<band height="176" splitType="Stretch">
+		<band height="210" splitType="Stretch">
 			<frame>
-				<reportElement mode="Opaque" x="0" y="0" width="555" height="176" isRemoveLineWhenBlank="true" uuid="87f78d47-038b-43c5-8b81-cc461f087fcb"/>
+				<reportElement mode="Opaque" x="0" y="0" width="555" height="208" isRemoveLineWhenBlank="true" uuid="87f78d47-038b-43c5-8b81-cc461f087fcb"/>
 				<frame>
-					<reportElement mode="Opaque" x="312" y="0" width="243" height="176" isRemoveLineWhenBlank="true" forecolor="#000000" uuid="3fc0ec38-dee3-46de-b578-c86125286326"/>
+					<reportElement mode="Opaque" x="312" y="0" width="243" height="206" isRemoveLineWhenBlank="true" forecolor="#000000" uuid="3fc0ec38-dee3-46de-b578-c86125286326"/>
 					<textField isBlankWhenNull="true">
-						<reportElement style="etiqueta-celda" x="143" y="80" width="100" height="16" uuid="ecd458c4-ee44-4ea1-843c-a5dd2f4cc855"/>
+						<reportElement style="etiqueta-celda" x="143" y="96" width="100" height="16" uuid="ecd458c4-ee44-4ea1-843c-a5dd2f4cc855"/>
 						<box>
 							<pen lineColor="#013870"/>
 							<topPen lineColor="#013870"/>
@@ -754,10 +761,10 @@
 							<bottomPen lineColor="#013870"/>
 							<rightPen lineColor="#013870"/>
 						</box>
-						<text><![CDATA[SUBTOTAL 12%]]></text>
+						<text><![CDATA[SUBTOTAL 15%]]></text>
 					</staticText>
 					<staticText>
-						<reportElement style="etiqueta-celda" x="0" y="80" width="143" height="16" uuid="2d237747-9e89-40a0-b103-78ab7d0d1770"/>
+						<reportElement style="etiqueta-celda" x="0" y="96" width="143" height="16" uuid="2d237747-9e89-40a0-b103-78ab7d0d1770"/>
 						<box>
 							<pen lineColor="#013870"/>
 							<topPen lineColor="#013870"/>
@@ -768,7 +775,7 @@
 						<text><![CDATA[TOTAL DESCUENTO]]></text>
 					</staticText>
 					<staticText>
-						<reportElement style="etiqueta-celda" x="0" y="16" width="143" height="16" uuid="76bd6019-4621-47cb-970a-28ff7118c1ad"/>
+						<reportElement style="etiqueta-celda" x="0" y="32" width="143" height="16" uuid="76bd6019-4621-47cb-970a-28ff7118c1ad"/>
 						<box>
 							<pen lineColor="#013870"/>
 							<topPen lineColor="#013870"/>
@@ -776,10 +783,10 @@
 							<bottomPen lineColor="#013870"/>
 							<rightPen lineColor="#013870"/>
 						</box>
-						<text><![CDATA[SUBTOTAL 0%]]></text>
+						<text><![CDATA[SUBTOTAL   0%]]></text>
 					</staticText>
 					<staticText>
-						<reportElement style="etiqueta-celda" x="0" y="48" width="143" height="16" uuid="f56cb93a-c823-47c1-9bb4-eb0b8d00730e"/>
+						<reportElement style="etiqueta-celda" x="0" y="64" width="143" height="16" uuid="f56cb93a-c823-47c1-9bb4-eb0b8d00730e"/>
 						<box>
 							<pen lineColor="#013870"/>
 							<topPen lineColor="#013870"/>
@@ -790,7 +797,7 @@
 						<text><![CDATA[SUBTOTAL EXCENTO DE IVA]]></text>
 					</staticText>
 					<staticText>
-						<reportElement style="etiqueta-celda" x="0" y="112" width="143" height="16" uuid="6d7f39c3-108e-478d-87ae-17d2310b4d85"/>
+						<reportElement style="etiqueta-celda" x="0" y="128" width="143" height="16" uuid="6d7f39c3-108e-478d-87ae-17d2310b4d85"/>
 						<box>
 							<pen lineColor="#013870"/>
 							<topPen lineColor="#013870"/>
@@ -798,10 +805,10 @@
 							<bottomPen lineColor="#013870"/>
 							<rightPen lineColor="#013870"/>
 						</box>
-						<text><![CDATA[IVA 12%]]></text>
+						<text><![CDATA[IVA 15%]]></text>
 					</staticText>
 					<staticText>
-						<reportElement style="etiqueta-celda" x="0" y="32" width="143" height="16" uuid="46a32b71-ea7d-4868-bb86-1225e2d929fa"/>
+						<reportElement style="etiqueta-celda" x="0" y="48" width="143" height="16" uuid="46a32b71-ea7d-4868-bb86-1225e2d929fa"/>
 						<box>
 							<pen lineColor="#013870"/>
 							<topPen lineColor="#013870"/>
@@ -812,7 +819,7 @@
 						<text><![CDATA[SUBTOTAL NO OBJETO DE IVA]]></text>
 					</staticText>
 					<textField isBlankWhenNull="true">
-						<reportElement style="etiqueta-celda" x="143" y="32" width="100" height="16" uuid="e755fc6c-95f7-4df4-8e21-5861ca24ff63"/>
+						<reportElement style="etiqueta-celda" x="143" y="48" width="100" height="16" uuid="e755fc6c-95f7-4df4-8e21-5861ca24ff63"/>
 						<box>
 							<pen lineColor="#013870"/>
 							<topPen lineColor="#013870"/>
@@ -826,7 +833,7 @@
 						<textFieldExpression><![CDATA[$F{subtotalNoObjeto}==null?0:$F{subtotalNoObjeto}]]></textFieldExpression>
 					</textField>
 					<textField isBlankWhenNull="true">
-						<reportElement style="etiqueta-celda" x="143" y="64" width="100" height="16" uuid="47dcea5a-ef99-4a00-b930-a608abaddd6d"/>
+						<reportElement style="etiqueta-celda" x="143" y="80" width="100" height="16" uuid="47dcea5a-ef99-4a00-b930-a608abaddd6d"/>
 						<box>
 							<pen lineColor="#013870"/>
 							<topPen lineColor="#013870"/>
@@ -840,7 +847,7 @@
 						<textFieldExpression><![CDATA[$F{totalSinImpuestos}==null?0:$F{totalSinImpuestos}]]></textFieldExpression>
 					</textField>
 					<textField isBlankWhenNull="true">
-						<reportElement style="etiqueta-celda" x="143" y="112" width="100" height="16" uuid="3efeaf5b-ae71-4bef-a0fb-5317050e311f"/>
+						<reportElement style="etiqueta-celda" x="143" y="128" width="100" height="16" uuid="3efeaf5b-ae71-4bef-a0fb-5317050e311f"/>
 						<box>
 							<pen lineColor="#013870"/>
 							<topPen lineColor="#013870"/>
@@ -851,10 +858,10 @@
 						<textElement textAlignment="Right">
 							<paragraph rightIndent="2"/>
 						</textElement>
-						<textFieldExpression><![CDATA[$F{iva12}==null?0:$F{iva12}]]></textFieldExpression>
+						<textFieldExpression><![CDATA[$F{iva15}==null?0:$F{iva15}]]></textFieldExpression>
 					</textField>
 					<staticText>
-						<reportElement style="etiqueta-celda" x="0" y="144" width="143" height="16" uuid="4207277d-d467-4291-ba8e-152b80989531"/>
+						<reportElement style="etiqueta-celda" x="0" y="176" width="143" height="16" uuid="4207277d-d467-4291-ba8e-152b80989531"/>
 						<box>
 							<pen lineColor="#013870"/>
 							<topPen lineColor="#013870"/>
@@ -865,7 +872,7 @@
 						<text><![CDATA[PROPINA]]></text>
 					</staticText>
 					<staticText>
-						<reportElement style="etiqueta-celda" x="0" y="128" width="143" height="16" uuid="a6c5ddfd-d9e0-4a61-8046-07d8c3429299"/>
+						<reportElement style="etiqueta-celda" x="0" y="160" width="143" height="16" uuid="a6c5ddfd-d9e0-4a61-8046-07d8c3429299"/>
 						<box>
 							<pen lineColor="#013870"/>
 							<topPen lineColor="#013870"/>
@@ -887,10 +894,10 @@
 						<textElement textAlignment="Right">
 							<paragraph rightIndent="2"/>
 						</textElement>
-						<textFieldExpression><![CDATA[$F{subtotal12}==null?0:$F{subtotal12}]]></textFieldExpression>
+						<textFieldExpression><![CDATA[$F{subtotal15}==null?0:$F{subtotal15}]]></textFieldExpression>
 					</textField>
 					<staticText>
-						<reportElement style="etiqueta-celda" x="0" y="64" width="143" height="16" uuid="d1c0bd94-0a34-4d0d-922d-a7e59fdd91e4"/>
+						<reportElement style="etiqueta-celda" x="0" y="80" width="143" height="16" uuid="d1c0bd94-0a34-4d0d-922d-a7e59fdd91e4"/>
 						<box>
 							<pen lineColor="#013870"/>
 							<topPen lineColor="#013870"/>
@@ -901,7 +908,7 @@
 						<text><![CDATA[SUBTOTAL SIN IMPUESTOS]]></text>
 					</staticText>
 					<textField isBlankWhenNull="true">
-						<reportElement style="etiqueta-celda" x="143" y="16" width="100" height="16" uuid="aa374c01-bcb4-40c6-8ab2-18ce55dc5f64"/>
+						<reportElement style="etiqueta-celda" x="143" y="32" width="100" height="16" uuid="aa374c01-bcb4-40c6-8ab2-18ce55dc5f64"/>
 						<box>
 							<pen lineColor="#013870"/>
 							<topPen lineColor="#013870"/>
@@ -915,7 +922,7 @@
 						<textFieldExpression><![CDATA[$F{subtotal0}==null?0:$F{subtotal0}]]></textFieldExpression>
 					</textField>
 					<textField isBlankWhenNull="true">
-						<reportElement style="etiqueta-celda" x="143" y="144" width="100" height="16" uuid="dfe79359-4a10-4121-a4c3-c6248bc3f1a8"/>
+						<reportElement style="etiqueta-celda" x="143" y="176" width="100" height="16" uuid="dfe79359-4a10-4121-a4c3-c6248bc3f1a8"/>
 						<box>
 							<pen lineColor="#013870"/>
 							<topPen lineColor="#013870"/>
@@ -929,7 +936,7 @@
 						<textFieldExpression><![CDATA[$F{propina}==null?0:$F{propina}]]></textFieldExpression>
 					</textField>
 					<textField isBlankWhenNull="true">
-						<reportElement style="etiqueta-celda" x="143" y="48" width="100" height="16" uuid="f4763e1e-7cce-43a5-8590-c07d741f4128"/>
+						<reportElement style="etiqueta-celda" x="143" y="64" width="100" height="16" uuid="f4763e1e-7cce-43a5-8590-c07d741f4128"/>
 						<box>
 							<pen lineColor="#013870"/>
 							<topPen lineColor="#013870"/>
@@ -943,7 +950,7 @@
 						<textFieldExpression><![CDATA[$F{subtotalExcento}==null?0:$F{subtotalExcento}]]></textFieldExpression>
 					</textField>
 					<textField isBlankWhenNull="true">
-						<reportElement style="etiqueta-celda" x="143" y="128" width="100" height="16" uuid="3e29b535-2664-4326-977d-54a2beceef01"/>
+						<reportElement style="etiqueta-celda" x="143" y="160" width="100" height="16" uuid="3e29b535-2664-4326-977d-54a2beceef01"/>
 						<box>
 							<pen lineColor="#013870"/>
 							<topPen lineColor="#013870"/>
@@ -957,7 +964,7 @@
 						<textFieldExpression><![CDATA[$F{irbpnr}==null?0:$F{irbpnr}]]></textFieldExpression>
 					</textField>
 					<staticText>
-						<reportElement style="etiqueta-celda" x="0" y="96" width="143" height="16" uuid="3d9cd7d5-319d-4de5-a086-a9502b7b729e"/>
+						<reportElement style="etiqueta-celda" x="0" y="112" width="143" height="16" uuid="3d9cd7d5-319d-4de5-a086-a9502b7b729e"/>
 						<box>
 							<pen lineColor="#013870"/>
 							<topPen lineColor="#013870"/>
@@ -968,7 +975,7 @@
 						<text><![CDATA[ICE]]></text>
 					</staticText>
 					<textField isBlankWhenNull="true">
-						<reportElement style="etiqueta-celda" x="143" y="160" width="100" height="16" uuid="e85d4f3c-58f1-4768-bf1d-e604f3452896"/>
+						<reportElement style="etiqueta-celda" x="143" y="192" width="100" height="16" uuid="e85d4f3c-58f1-4768-bf1d-e604f3452896"/>
 						<box>
 							<pen lineColor="#013870"/>
 							<topPen lineColor="#013870"/>
@@ -982,7 +989,7 @@
 						<textFieldExpression><![CDATA[$F{importeTotal}==null?0:$F{importeTotal}]]></textFieldExpression>
 					</textField>
 					<staticText>
-						<reportElement style="etiqueta-celda" x="0" y="160" width="143" height="16" uuid="8983183f-9ad6-4b94-8bde-f2d8d4721abb"/>
+						<reportElement style="etiqueta-celda" x="0" y="192" width="143" height="16" uuid="8983183f-9ad6-4b94-8bde-f2d8d4721abb"/>
 						<box>
 							<pen lineColor="#013870"/>
 							<topPen lineColor="#013870"/>
@@ -993,7 +1000,7 @@
 						<text><![CDATA[VALOR TOTAL]]></text>
 					</staticText>
 					<textField isBlankWhenNull="true">
-						<reportElement style="etiqueta-celda" x="143" y="96" width="100" height="16" uuid="0eef8344-2c31-4bcf-9de8-b54fb9cc6732"/>
+						<reportElement style="etiqueta-celda" x="143" y="112" width="100" height="16" uuid="0eef8344-2c31-4bcf-9de8-b54fb9cc6732"/>
 						<box>
 							<pen lineColor="#013870"/>
 							<topPen lineColor="#013870"/>
@@ -1005,6 +1012,56 @@
 							<paragraph rightIndent="2"/>
 						</textElement>
 						<textFieldExpression><![CDATA[$F{ice}==null?0:$F{ice}]]></textFieldExpression>
+					</textField>
+					<staticText>
+						<reportElement style="etiqueta-celda" x="0" y="16" width="143" height="16" uuid="f5190142-cbe9-4ffd-b49d-396c06a37f5d"/>
+						<box>
+							<pen lineColor="#013870"/>
+							<topPen lineColor="#013870"/>
+							<leftPen lineColor="#013870"/>
+							<bottomPen lineColor="#013870"/>
+							<rightPen lineColor="#013870"/>
+						</box>
+						<text><![CDATA[SUBTOTAL   5%]]></text>
+					</staticText>
+					<textField isBlankWhenNull="true">
+						<reportElement style="etiqueta-celda" x="143" y="16" width="100" height="16" uuid="43b476fd-416b-49e8-b47e-7b5fa712650f"/>
+						<box>
+							<pen lineColor="#013870"/>
+							<topPen lineColor="#013870"/>
+							<leftPen lineColor="#013870"/>
+							<bottomPen lineColor="#013870"/>
+							<rightPen lineColor="#013870"/>
+						</box>
+						<textElement textAlignment="Right">
+							<paragraph rightIndent="2"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$F{subtotal5}==null?0:$F{subtotal5}]]></textFieldExpression>
+					</textField>
+					<staticText>
+						<reportElement style="etiqueta-celda" x="0" y="144" width="143" height="16" uuid="e26f5d75-3f08-4a81-8ea5-f7dbb003144a"/>
+						<box>
+							<pen lineColor="#013870"/>
+							<topPen lineColor="#013870"/>
+							<leftPen lineColor="#013870"/>
+							<bottomPen lineColor="#013870"/>
+							<rightPen lineColor="#013870"/>
+						</box>
+						<text><![CDATA[IVA 5%]]></text>
+					</staticText>
+					<textField isBlankWhenNull="true">
+						<reportElement style="etiqueta-celda" x="143" y="144" width="100" height="16" uuid="2d4589f2-ec85-4033-bc16-ee59fcae12f7"/>
+						<box>
+							<pen lineColor="#013870"/>
+							<topPen lineColor="#013870"/>
+							<leftPen lineColor="#013870"/>
+							<bottomPen lineColor="#013870"/>
+							<rightPen lineColor="#013870"/>
+						</box>
+						<textElement textAlignment="Right">
+							<paragraph rightIndent="2"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$F{iva5}==null?0:$F{iva5}]]></textFieldExpression>
 					</textField>
 				</frame>
 				<frame>
